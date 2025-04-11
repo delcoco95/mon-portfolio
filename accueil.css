@@ -1,0 +1,265 @@
+/* Style général */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #BAC9CC;
+  overflow-x: hidden; /* Empêche tout débordement horizontal */
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #8A9FA5;
+  color: white;
+  font-weight: 600;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Conteneur principal dans le header */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Menu */
+.menu ul {
+  list-style-type: none; /* Supprime les puces */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Affiche les liens en ligne */
+  gap: 20px;
+  flex-wrap: wrap; /* Permet au menu de passer sur plusieurs lignes si nécessaire */
+}
+
+.menu li {
+  font-size: 16px; /* Taille de police des liens */
+}
+
+.menu a {
+  text-decoration: none; /* Supprime le soulignement des liens */
+  color: white; /* Couleur blanche pour les liens */
+  font-weight: bold;
+  transition: color 0.3s ease; /* Ajoute un effet au survol */
+}
+
+.menu a:hover {
+  color: #BAC9CC; /* Change la couleur au survol */
+}
+
+/* Responsive Menu */
+@media screen and (max-width: 768px) {
+  .header-container {
+    flex-direction: column; /* Passe le menu sous le titre */
+    align-items: center;
+  }
+
+  .menu ul {
+    flex-direction: column; /* Affiche le menu verticalement */
+    gap: 10px; /* Réduit l'espace entre les liens */
+    align-items: center; /* Centre les liens dans le conteneur */
+  }
+}
+
+/* Espacement entre les sections principales */
+section {
+  margin-bottom: 50px; /* Espace entre les sections */
+}
+
+/* Contenu principal */
+main {
+  padding: 0 20px;
+}
+
+/* Style pour aligner les titres des sections */
+h4 {
+  text-align: center;
+  font-size: 20px; /* Taille de police pour les titres */
+  font-weight: bold;
+  margin-bottom: 20px; /* Ajoute de l'espace sous les titres */
+}
+
+/* Section BTS SIO */
+#ecole-bts h3 {
+
+  font-weight: bold;
+  text-align: left; /* Centre le titre */
+}
+
+#ecole-bts p {
+  font-size: 16px;
+  color: #000000; /* Texte en gris foncé pour une lisibilité optimale */
+  margin-bottom: 15px; /* Espace entre les paragraphes */
+}
+
+.options-bts {
+  display: flex; /* Alignement des bulles en ligne */
+  justify-content: center; /* Centre les bulles dans le conteneur */
+  gap: 20px; /* Espace entre les bulles */
+  flex-wrap: wrap; /* Permet aux bulles de s'adapter sur plusieurs lignes sur petits écrans */
+}
+
+.option {
+  background-color: #ffffff; /* Fond blanc des bulles */
+  border-radius: 10px; /* Coins légèrement arrondis pour un effet moderne */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre pour donner du relief */
+  padding: 20px;
+  width: 300px; /* Taille fixe des bulles */
+  text-align: left; /* Aligne le texte à gauche */
+}
+
+.option h4 {
+  font-size: 20px; /* Taille des titres des bulles */
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.option p {
+  font-size: 16px; /* Texte des descriptions */
+  color: #555555;
+}
+
+/* Responsive pour petits écrans */
+@media screen and (max-width: 768px) {
+  .options-bts {
+      flex-direction: column; /* Les bulles passent en colonne */
+      gap: 15px; /* Réduit l'espacement entre les bulles */
+  }
+}
+
+
+/* Conteneur des logos */
+#outils-os .logo-container {
+  display: flex;
+  flex-wrap: wrap; /* Les logos passent à la ligne si nécessaire */
+  gap: 20px; /* Espacement entre les logos */
+  justify-content: center; /* Centre tous les logos */
+}
+
+/* Chaque logo */
+#outils-os .logo-item {
+  width: 100px; /* Taille uniforme des conteneurs */
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Images des logos */
+#outils-os .logo-item img {
+  width: 100%; /* Les images remplissent leur conteneur */
+  height: auto; /* Maintient les proportions des logos */
+  object-fit: contain; /* Ajuste les proportions sans déformer */
+}
+
+/* Ajustement spécifique pour GLPI */
+#outils-os img[alt="Glpi"] {
+  width: 100%; /* Taille bien ajustée */
+  height: auto;
+}
+
+/* Ajustement spécifique pour Nmap */
+#outils-os img[alt="Nmap"] {
+  width: 100%; /* Taille bien alignée */
+  height: auto;
+}
+
+/* Ajustement spécifique pour Active Directory */
+#outils-os img[alt="Active Directory"] {
+  width: 100%; /* Taille uniforme pour correspondre aux autres */
+  height: auto;
+}
+
+/* Section "Systèmes d'exploitation" */
+#competences {
+  margin-top: 40px; /* Ajoute de l'espace avant cette section */
+}
+
+#competences .os-images {
+  display: flex;
+  justify-content: center; /* Centre les images */
+  flex-wrap: wrap; /* Les images passent à la ligne si nécessaire */
+  gap: 20px; /* Ajoute de l'espace entre les images */
+}
+
+#competences figure {
+  width: 90px; /* Taille harmonieuse des conteneurs */
+  height: 180px;
+  text-align: center;
+}
+
+#competences img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Préserve les proportions des images */
+  border-radius: 8px; /* Coins légèrement arrondis */
+}
+
+#competences figcaption {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Section "Centres d'intérêt" */
+#centres-interet div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Ajoute de l'espace entre les images */
+}
+
+#centres-interet figure {
+  width: 200px; /* Taille des figures */
+  height: 200px;
+  text-align: center;
+  margin: 0 auto; /* Centre les figures */
+}
+
+#centres-interet img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#centres-interet figcaption {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+  color: black;
+}
+
+/* Responsive pour les petits écrans */
+@media screen and (max-width: 380px) {
+  #centres-interet figure {
+    width: 150px; /* Réduction des figures */
+    height: 150px;
+  }
+
+  #centres-interet figcaption {
+    font-size: 12px;
+  }
+
+  #outils-os .logo-item {
+    width: 80px; /* Réduction des logos */
+    height: 80px;
+  }
+}
+
+/* Footer */
+footer {
+  text-align: center; /* Centre le contenu du bas de page */
+  padding: 10px; /* Ajoute un léger espace à l'intérieur */
+  background-color: #8A9FA5; /* Garde la couleur de fond cohérente avec le header */
+  color: white; /* Texte en blanc pour un bon contraste */
+  font-weight: 400; /* Poids du texte pour un design épuré */
+  width: 100%; /* Le footer occupe toute la largeur de la page */
+  box-sizing: border-box; /* Assure que padding est pris en compte dans la largeur */
+}
