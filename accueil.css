@@ -55,14 +55,14 @@ header {
 /* Responsive Menu */
 @media screen and (max-width: 768px) {
   .header-container {
-    flex-direction: column; /* Passe le menu sous le titre */
-    align-items: center;
+      flex-direction: column; /* Passe le menu sous le titre */
+      align-items: center;
   }
 
   .menu ul {
-    flex-direction: column; /* Affiche le menu verticalement */
-    gap: 10px; /* Réduit l'espace entre les liens */
-    align-items: center; /* Centre les liens dans le conteneur */
+      flex-direction: column; /* Affiche le menu verticalement */
+      gap: 10px; /* Réduit l'espace entre les liens */
+      align-items: center; /* Centre les liens dans le conteneur */
   }
 }
 
@@ -86,7 +86,6 @@ h4 {
 
 /* Section BTS SIO */
 #ecole-bts h3 {
-  
   font-weight: bold;
   text-align: left; /* Centre le titre */
 }
@@ -132,48 +131,107 @@ h4 {
   }
 }
 
-
-/* Conteneur des logos */
-#outils-os .logo-container {
-  display: flex;
-  flex-wrap: wrap; /* Les logos passent à la ligne si nécessaire */
-  gap: 20px; /* Espacement entre les logos */
-  justify-content: center; /* Centre tous les logos */
+/* Section Outils et Logiciels */
+#outils-os {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-/* Chaque logo */
-#outils-os .logo-item {
-  width: 100px; /* Taille uniforme des conteneurs */
-  height: 100px;
+#outils-os h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Swiper Container */
+.swiper-container {
+  width: 80%; /* Le carrousel occupe 80% de la largeur */
+  margin: 0 auto; /* Centre le carrousel horizontalement */
+  overflow: hidden;
+}
+
+/* Swiper Slides */
+.swiper-slide {
   display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre verticalement le contenu */
   justify-content: center;
+  text-align: center;
+  padding: 10px; /* Espacement autour du contenu */
+}
+
+/* Frames des Images */
+.swiper-slide .image-frame {
+  width: 150px;
+  height: 150px;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-/* Images des logos */
-#outils-os .logo-item img {
-  width: 100%; /* Les images remplissent leur conteneur */
-  height: auto; /* Maintient les proportions des logos */
-  object-fit: contain; /* Ajuste les proportions sans déformer */
+
+/* Images */
+.swiper-slide img {
+  max-width: 100%; /* S'adapte à la largeur du frame */
+  max-height: 100%; /* S'adapte à la hauteur du frame */
+  object-fit: contain; /* Garde les proportions des images */
 }
 
-/* Ajustement spécifique pour GLPI */
-#outils-os img[alt="Glpi"] {
-  width: 100%; /* Taille bien ajustée */
-  height: auto;
+/* Caption */
+.caption {
+  margin-top: 10px;
+  text-align: center;
 }
 
-/* Ajustement spécifique pour Nmap */
-#outils-os img[alt="Nmap"] {
-  width: 100%; /* Taille bien alignée */
-  height: auto;
+.caption h5 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin: 5px 0;
 }
 
-/* Ajustement spécifique pour Active Directory */
-#outils-os img[alt="Active Directory"] {
-  width: 100%; /* Taille uniforme pour correspondre aux autres */
-  height: auto;
+.caption p {
+  font-size: 12px;
+  color: #555;
+  margin: 0;
 }
+
+/* Responsive pour petits écrans */
+@media screen and (max-width: 768px) {
+  .swiper-container {
+      width: 100%; /* Prend toute la largeur */
+  }
+
+  .swiper-slide .image-frame {
+      width: 100px; /* Réduction de la taille des frames */
+      height: 100px;
+  }
+
+  .caption h5 {
+      font-size: 14px;
+  }
+
+  .caption p {
+      font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .swiper-slide .image-frame {
+      width: 80px; /* Réduction encore plus pour très petits écrans */
+      height: 80px;
+  }
+
+  .caption h5 {
+      font-size: 12px;
+  }
+
+  .caption p {
+      font-size: 9px;
+  }
+}
+
+
 
 /* Section "Systèmes d'exploitation" */
 #competences {
@@ -239,17 +297,12 @@ h4 {
 /* Responsive pour les petits écrans */
 @media screen and (max-width: 380px) {
   #centres-interet figure {
-    width: 150px; /* Réduction des figures */
-    height: 150px;
+      width: 150px; /* Réduction des figures */
+      height: 150px;
   }
 
   #centres-interet figcaption {
-    font-size: 12px;
-  }
-
-  #outils-os .logo-item {
-    width: 80px; /* Réduction des logos */
-    height: 80px;
+      font-size: 12px;
   }
 }
 
