@@ -3,230 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Nedj Belloum</title>
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <!-- Fichier CSS principal -->
-    <link rel="stylesheet" href="accueil.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Accueil - Portfolio Nedj Belloum</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+        header {
+            background-color: #4a5568; /* bleu-gris */
+        }
+        .nav-link.active {
+            font-weight: bold;
+            border-bottom: 2px solid #fff;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <div class="header-container">
-            <h1>PORTFOLIO</h1>
-            <h2>Nedj Belloum</h2>
-            <!-- Menu en haut à droite -->
-            <nav class="menu">
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="experience.html">Expérience Pro</a></li>
-                    <li><a href="veille.html">Veille Technologique</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>      
-    
-    <main>
-        <section id="presentation-personnelle">
-            <h3>A propos de moi</h3>
-            <p>En reconversion professionnelle, je suis actuellement en BTS SIO (option SISR) à IRIS - MediaSchool Nice. Passionné par l’informatique et les nouvelles technologies, je me forme aux infrastructures, systèmes et réseaux après quatre ans d’expérience en logistique.</p>
-        </section>
-        
-        <section id="ecole-bts">
-            <h3>Présentation du BTS SIO</h3>
-            <p>
-                Le Brevet de Technicien Supérieur aux Services Informatiques aux Organisations (BTS SIO) s'adresse à ceux qui souhaitent se former en deux ans aux métiers d'administrateur réseau ou de développeur.
-                Et ainsi, par la suite, intégrer directement le marché du travail ou continuer des études dans le domaine de l'informatique.
-            </p>
-            <p>Deux options sont disponibles au sein du BTS SIO :</p>
-            <div class="options-bts">
-                <div class="option">
-                    <h4>Option SISR</h4>
-                    <p>
-                        Solutions d'Infrastructure, Systèmes et Réseaux. Cette option forme aux métiers liés à la gestion des réseaux et des infrastructures.
-                    </p>
-                </div>
-                <div class="option">
-                    <h4>Option SLAM</h4>
-                    <p>
-                        Solutions Logicielles et Applications Métiers. Cette option est dédiée au développement logiciel et à la création d'applications métiers.
-                    </p>
-                </div>
-            </div>
-        </section>                     
-        
-        <section id="competences">
-            <h3>Mes compétences</h3>
-            <p>
-                Au cours de mon cursus, j'ai pu obtenir plusieurs certifications et diplômes que vous trouverez ci-dessous.
-                Les connaissances que j'ai acquises au sein de ces formations m'ont permis de développer mes compétences en informatiques.
-                Parallèlement, j'ai également obtenu d'autres certifications grâce à ma propre initiative. J'ai réussi à obtenir des
-                certifications supplémentaires me permettant d'approfondir mes connaissances et compétences.
-            </p>
-            <section id="outils-os">
-                <h4>Les outils et logiciels</h4>
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <!-- Wireshark -->
-                        <div class="swiper-slide">
-                            <div class="image-frame">
-                                <img src="Wireshark_icon_new.png" alt="Wireshark">
-                            </div>
-                            <div class="caption">
-                                <h5>Wireshark</h5>
-                                <p>Analyseur de paquets pour surveiller et diagnostiquer les réseaux.</p>
-                            </div>
-                        </div>
-                        <!-- VMware -->
-                        <div class="swiper-slide">
-                            <div class="image-frame">
-                                <img src="vmware_gold.png" alt="VMware">
-                            </div>
-                            <div class="caption">
-                                <h5>VMware</h5>
-                                <p>Plateforme de virtualisation pour créer et gérer des machines virtuelles.</p>
-                            </div>
-                        </div>
-                        <!-- Oracle VirtualBox -->
-                        <div class="swiper-slide">
-                            <div class="image-frame">
-                                <img src="VirtualBox_2024.webp" alt="Oracle VirtualBox">
-                            </div>
-                            <div class="caption">
-                                <h5>Oracle VirtualBox</h5>
-                                <p>Solution open source pour virtualiser.</p>
-                            </div>
-                        </div>
-                        <!-- Active Directory -->
-                        <div class="swiper-slide">
-                            <div class="image-frame">
-                                <img src="activedirectory-removebg-preview.png" alt="Active Directory">
-                            </div>
-                            <div class="caption">
-                                <h5>Active Directory</h5>
-                                <p>Outil de gestion des ressources réseau et des utilisateurs.</p>
-                            </div>
-                        </div>
-                        <!-- Powershell -->
-                        <div class="swiper-slide">
-                            <div class="image-frame">
-                                <img src="Powershell_128.svg.png" alt="Powershell">
-                            </div>
-                            <div class="caption">
-                                <h5>Powershell</h5>
-                                <p>Interface en ligne de commande.</p>
-                            </div>
-                        </div>
-                        <!-- GLPI -->
-                        <div class="swiper-slide">
-                            <div class="image-frame">
-                                <img src="glpi.webp" alt="GLPI">
-                            </div>
-                            <div class="caption">
-                                <h5>GLPI</h5>
-                                <p>Outil de gestion d'inventaire et de helpdesk informatique.</p>
-                            </div>
-                        </div>
-                        <!-- Visual Studio Code -->
-                        <div class="swiper-slide">
-                            <div class="image-frame">
-                                <img src="VisualStudioCode.webp" alt="Visual Studio Code">
-                            </div>
-                            <div class="caption">
-                                <h5>Visual Studio Code</h5>
-                                <p>Éditeur de code source avec prise en charge des extensions.</p>
-                            </div>
-                        </div>
-                        <!-- Wireguard -->
-                        <div class="swiper-slide">
-                            <div class="image-frame">
-                                <img src="WireGuard_Logo-700x700.webp" alt="Wireguard">
-                            </div>
-                            <div class="caption">
-                                <h5>Wireguard</h5>
-                                <p>VPN rapide, sécurisé et moderne.</p>
-                            </div>
-                        </div>
-                        <!-- MAMP -->
-                        <div class="swiper-slide">
-                            <div class="image-frame">
-                                <img src="MAMP-removebg-preview.png" alt="MAMP">
-                            </div>
-                            <div class="caption">
-                                <h5>MAMP</h5>
-                                <p>Environnement local pour développer des sites web en PHP/MySQL.</p>
-                            </div>
-                        </div>
-                        <!-- Nmap -->
-                        <div class="swiper-slide">
-                            <div class="image-frame">
-                                <img src="nmap1.svg" alt="Nmap">
-                            </div>
-                            <div class="caption">
-                                <h5>Nmap</h5>
-                                <p>Outil de scan et de cartographie réseau.</p>
-                            </div>
-                        </div>
-                        <!-- Cisco Packet Tracer -->
-                        <div class="swiper-slide">
-                            <div class="image-frame">
-                                <img src="cisco_packet.png" alt="Cisco Packet Tracer">
-                            </div>
-                            <div class="caption">
-                                <h5>Cisco Packet Tracer</h5>
-                                <p>Simulateur réseau.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>            
-                            
-            <article id="systemes-exploitation">
-                <h4>Les systèmes d'exploitation</h4>
-                <div class="os-images">
-                    <figure>
-                        <img src="debian.webp" alt="Linux Debian et Ubuntu">
-                    </figure>
-                    <figure>
-                        <img src="windows11.webp" alt="Windows">
-                    </figure>
-                    <figure>
-                        <img src="server-windows.webp" alt="Windows Server">
-                    </figure>
-                </div>
-            </article>
-        </section>
-        
-        <section id="centres-interet">
-            <h3>Mes centres d'intérêt</h3>
-            <div>
-                <figure>
-                    <img src="beach.jpg" alt="Voyages">
-                </figure>
-                <figure>
-                    <img src="tech.jpg" alt="Technologie">
-                </figure>
-                <figure>
-                    <img src="match.jpg" alt="Football">
-                </figure>
-            </div>
-        </section>
-    </main>
-    
-    <footer>
-        <p>© 2025 Nedj Belloum. Tous droits réservés. Mentions légales.</p>
-        <p>
-            <a href="https://www.linkedin.com/">LinkedIn</a> | 
-            <a href="https://github.com/">GitHub</a>
-        </p>
-    </footer>
-    
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- JavaScript principal -->
-    <script src="accueil.js"></script>
-    </body>
-    </html>
-    
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100" tabindex="0">
+
+<!-- Navbar -->
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Nedj Belloum</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#hero">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projets.html">Projets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="competences.html">Compétences</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="veille.html">Veille</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header id="hero" class="vh-100 d-flex align-items-center text-center text-white">
+  <div class="container" data-aos="fade-up">
+    <h1 class="display-4">Bienvenue sur mon Portfolio</h1>
+    <p class="lead">Je suis Nedj Belloum, futur Administrateur en infrastructure réseau</p>
+    <a href="#about" class="btn btn-light mt-4">Découvrir</a>
+  </div>
+</header>
+
+<!-- À propos -->
+<section id="about" class="py-5 bg-light">
+  <div class="container" data-aos="fade-up">
+    <h2 class="mb-4">À propos de moi</h2>
+    <p>En reconversion professionnelle, je suis actuellement en BTS SIO (option SISR) à IRIS - MediaSchool Nice. Passionné par l’informatique et les nouvelles technologies, je me forme aux infrastructures, systèmes et réseaux après quatre ans d’expérience en logistique.</p>
+  </div>
+</section>
+
+<!-- BTS SIO -->
+<section id="bts" class="py-5">
+  <div class="container" data-aos="fade-up">
+    <h2 class="mb-4">Le BTS SIO</h2>
+    <p>Le Brevet de Technicien Supérieur Services Informatiques aux Organisations forme des techniciens capables de gérer, maintenir ou développer des solutions informatiques pour les entreprises.</p>
+    <h4 class="mt-4">Option SISR</h4>
+    <p>Solutions d'Infrastructure, Systèmes et Réseaux : une formation orientée vers la mise en place et la sécurisation de réseaux, la gestion de serveurs, et la maintenance informatique.</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+  <p class="mb-0">© 2025 Nedj Belloum. Tous droits réservés. 
+    <a href="mentions-legales.html" class="text-white-50">Mentions légales</a>
+    <a href="https://www.linkedin.com/">LinkedIn</a> | 
+    <a href="https://github.com/">GitHub</a>
+</p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
