@@ -30,6 +30,13 @@
       font-size: 1.5rem;
       color: #4a5568;
     }
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
   </style>
 </head>
 <body>
@@ -117,7 +124,7 @@
       <h2 class="mb-4 icon-title"><i class="bi bi-award-fill section-icon"></i> Certifications en cours d'obtention</h2>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
-          <div class="card h-100 text-center">
+          <div class="card h-100 text-center card-hover">
             <div class="card-body">
               <img src="image_logo/cisco.png" alt="Cisco" class="img-fluid mb-3" style="max-height: 50px;">
               <h5 class="card-title">Cisco – Introduction to Networks</h5>
@@ -126,7 +133,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card h-100 text-center">
+          <div class="card h-100 text-center card-hover">
             <div class="card-body">
               <img src="image_logo/Logo ANSSI.webp" alt="ANSSI" class="img-fluid mb-3" style="max-height: 50px;">
               <h5 class="card-title">ANSSI – Sensibilisation à la cybersécurité</h5>
@@ -135,7 +142,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card h-100 text-center">
+          <div class="card h-100 text-center card-hover">
             <div class="card-body">
               <img src="image_logo/compTIA.webp" alt="CompTIA+" class="img-fluid mb-3" style="max-height: 50px;">
               <h5 class="card-title">CompTIA+ – IT Fundamentals</h5>

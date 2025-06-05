@@ -30,6 +30,15 @@
       font-size: 1.5rem;
       color: #4a5568;
     }
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card-hover:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
   </style>
 </head>
 <body>
@@ -70,68 +79,92 @@
     </div>
   </header>
 
-  <!-- Projets Section -->
-  <section class="py-5 bg-light">
-    <div class="container">
-      <h2 class="mb-4 icon-title" data-aos="fade-up"><i class="bi bi-code-slash section-icon"></i> Projets Réalisés</h2>
-      <div class="row g-4">
-        <div class="col-md-6" data-aos="fade-right">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title"><i class="bi bi-diagram-2"></i> RP - Projet Web - Cinezone - 12 jours</h5>
-              <p class="card-text">Développement d’un portail local de gestion et de découverte cinématographique pour un réseau privé, avec hébergement sur un serveur web Apache et configuration réseau optimisée pour un accès sécurisé.</p>
-              <p class="text-muted">Technologies : API TMDB, Seveur Apache, VirtualBox, Debian</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6" data-aos="fade-left">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title"><i class="bi bi-hdd-network"></i> Installation d'un Active Directory - 1 jour</h5>
-              <p class="card-text">Installation et configuration d'un serveur Active Directory pour centraliser l’authentification et les droits utilisateurs sur un réseau local simulé.</p>
-              <p class="text-muted">Technologies : Windows Server, Active Directory, GPO</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6" data-aos="fade-right">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title"><i class="bi bi-diagram-2"></i> RP - Projet Web - NutriFit - 11 jours</h5>
-              <p class="card-text">Développement d’une application web locale d’assistant nutritionnel pour sportifs.</p>
-              <p class="text-muted">Technologies : API REST, Seveur Apache, VirtualBox, Debian</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6" data-aos="fade-left">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title"><i class="bi bi-hdd-network"></i> Création d'un menu Powershell pour Windows Server - 3 jours</h5>
-              <p class="card-text">Développement d’un script PowerShell interactif permettant l’installation et la configuration d’un serveur Windows Server 2022 sur une machine virtuelle.</p>
-              <p class="text-muted">Technologies : Windows Server 2022, Powershell, VS Code</p>
-            </div>
-          </div>
-        </div>
-         <div class="col-md-6" data-aos="fade-right">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title"><i class="bi bi-diagram-2"></i> RP - Projet Web - BookAuto - 3 mois</h5>
-              <p class="card-text">Création d'une plateforme de mise en relation entre professionnelle de l'automobile et particulier.</p>
-              <p class="text-muted">Technologies : Firebase, Leaflet + OpenStreetMap, FullCalendar, VS Code</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6" data-aos="fade-left">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title"><i class="bi bi-diagram-2"></i> RP - Projet Web - UmmatWork - 8 mois</h5>
-              <p class="card-text">Création d'une plateforme de freelancing.</p>
-              <p class="text-muted">Technologies : VS Code, MongoDB</p>
-            </div>
+  <!-- Section Projets Réalisés -->
+ <section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4 icon-title" data-aos="fade-up">
+      <i class="bi bi-code-slash section-icon"></i> Projets Réalisés
+    </h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+
+      <!-- Cinezone -->
+      <div class="col" data-aos="fade-up">
+        <div class="card shadow-sm h-100 card-hover">
+          <img src="image_logo/cinezonecapture.png" class="card-img-top" alt="Aperçu Cinezone">
+          <div class="card-body">
+            <h5 class="card-title">Projet Web - Cinezone</h5>
+            <p class="card-text">Portail de gestion cinématographique local avec hébergement Apache et configuration sécurisée.</p>
+            <p class="text-muted">⏱️ 12 jours – Technologies : API TMDB, Apache, Debian</p>
           </div>
         </div>
       </div>
+
+      <!-- Active Directory -->
+      <div class="col" data-aos="fade-up">
+        <div class="card shadow-sm h-100 card-hover">
+          <img src="image_logo/addscapture.png" class="card-img-top" alt="Aperçu Active Directory">
+          <div class="card-body">
+            <h5 class="card-title">Installation d’un Active Directory</h5>
+            <p class="card-text">Centralisation des identités et droits d’accès sur un réseau local simulé.</p>
+            <p class="text-muted">⏱️ 1 jour – Technologies : Windows Server, GPO</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- NutriFit -->
+      <div class="col" data-aos="fade-up">
+        <a href="https://delcoco95.github.io/Nutrifit/" target="_blank" class="text-decoration-none text-dark">
+        <div class="card shadow-sm h-100 card-hover">
+          <img src="image_logo/nutricapture.png" class="card-img-top" alt="Aperçu NutriFit">
+          <div class="card-body">
+            <h5 class="card-title">Projet Web - NutriFit</h5>
+            <p class="card-text">Assistant nutritionnel sportif hébergé en local sur environnement Debian virtualisé.</p>
+            <p class="text-muted">⏱️ 11 jours – Technologies : REST API, Apache, VirtualBox</p>
+          </div>
+        </div>
+        </a>
+      </div>
+
+      <!-- Menu Powershell -->
+      <div class="col" data-aos="fade-up">
+        <div class="card shadow-sm h-100 card-hover">
+          <img src="image_logo/menupowercapture.png" class="card-img-top" alt="Menu PowerShell">
+          <div class="card-body">
+            <h5 class="card-title">Script PowerShell Windows Server</h5>
+            <p class="card-text">Installation automatisée d’un serveur 2022 via interface CLI en PowerShell.</p>
+            <p class="text-muted">⏱️ 3 jours – Technologies : PowerShell, Hyper-V, Windows Server</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BookAuto -->
+      <div class="col" data-aos="fade-up">
+        <div class="card shadow-sm h-100 card-hover">
+          <img src="image_logo/bookautocapture.png" class="card-img-top" alt="Aperçu BookAuto">
+          <div class="card-body">
+            <h5 class="card-title">Projet Web - BookAuto</h5>
+            <p class="card-text">Plateforme de mise en relation automobile géolocalisée avec agenda intégré.</p>
+            <p class="text-muted">⏱️ 3 mois – Technologies : Firebase, Leaflet, FullCalendar</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- UmmatWork -->
+      <div class="col" data-aos="fade-up">
+        <div class="card shadow-sm h-100 card-hover">
+          <img src="image_logo/ummatcapture.png" class="card-img-top" alt="Aperçu UmmatWork">
+          <div class="card-body">
+            <h5 class="card-title">Projet Web - UmmatWork</h5>
+            <p class="card-text">Plateforme de freelancing connectant professionnels et clients en ligne.</p>
+            <p class="text-muted">⏱️ 8 mois – Technologies : MongoDB, Node.js, VS Code</p>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Section Expériences Professionnelles -->
   <section id="experience" class="pb-5 pt-5">
@@ -139,7 +172,7 @@
       <h2 class="mb-4 icon-title" data-aos="fade-up"><i class="bi bi-briefcase-fill section-icon"></i> Expériences Professionnelles</h2>
       <div class="row g-4">
         <div class="col-md-6">
-          <div class="card text-center h-100">
+          <div class="card text-center h-100 card-hover">
             <div class="card-body d-flex flex-column align-items-center justify-content-center">
               <div class="ratio ratio-1x1" style="width: 100px; margin-bottom: 10px;">
                 <a href="https://www.ragni.com/" target="_blank" rel="noopener noreferrer">
@@ -153,7 +186,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card text-center h-100">
+          <div class="card text-center h-100 card-hover">
             <div class="card-body d-flex flex-column align-items-center justify-content-center">
               <div style="width: 100px; height: 100px; margin-bottom: 10px;">
                  <a href="https://www.resistex-sa.com/fr/" target="_blank" rel="noopener noreferrer">
@@ -167,7 +200,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card text-center h-100">
+          <div class="card text-center h-100 card-hover">
             <div class="card-body d-flex flex-column align-items-center justify-content-center">
               <div class="ratio ratio-1x1" style="width: 100px; margin-bottom: 10px;">
                 <img src="image_logo/LOGO MSCAR.png" alt="Logo MSCAR" class="img-fluid" style="object-fit: contain;">
@@ -179,7 +212,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card text-center h-100">
+          <div class="card text-center h-100 card-hover">
             <div class="card-body d-flex flex-column align-items-center justify-content-center">
               <div style="width: 100px; height: 100px; margin-bottom: 10px;">
                 <a href="https://www.pickup.fr/" target="_blank" rel="noopener noreferrer">
