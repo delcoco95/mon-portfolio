@@ -21,6 +21,14 @@
             font-weight: bold;
             border-bottom: 2px solid #fff;
         }
+        .option-card {
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .option-card:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
     </style>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100" tabindex="0">
@@ -67,7 +75,7 @@
 <section id="about" class="py-5 bg-light">
   <div class="container" data-aos="fade-up">
     <h2 class="mb-4">À propos de moi</h2>
-    <p>En reconversion professionnelle après quatre ans d’expérience en logistique, je suis actuellement en BTS SIO (option SISR) à IRIS - MediaSchool Nice. Passionné par l’informatique et les nouvelles technologies, je me forme aux infrastructures, systèmes et réseaux.</p>
+    <p>En reconversion professionnelle après quatre ans d’expérience en logistique, je suis actuellement en BTS SIO (option SISR) à Mediaschool IRIS - Nice. Passionné par l’informatique et les nouvelles technologies, je me forme aux infrastructures, systèmes et réseaux.</p>
   </div>
 </section>
 
@@ -75,11 +83,56 @@
 <section id="bts" class="py-5">
   <div class="container" data-aos="fade-up">
     <h2 class="mb-4">Le BTS SIO</h2>
-    <p>Le Brevet de Technicien Supérieur Services Informatiques aux Organisations forme des techniciens capables de gérer, maintenir ou développer des solutions informatiques pour les entreprises.</p>
-    <h4 class="mt-4">Option SISR</h4>
-    <p>Solutions d'Infrastructure, Systèmes et Réseaux : une formation orientée vers la mise en place et la sécurisation de réseaux, la gestion de serveurs, et la maintenance informatique.</p>
+
+    <!-- Carte principale BTS SIO -->
+    <div class="card mb-5 shadow-sm" style="border-radius: 12px;">
+      <div class="card-body d-flex flex-wrap justify-content-between align-items-start">
+        <!-- Texte -->
+        <div class="col-md-8">
+          <p class="mb-0">
+             Le BTS SIO forme des spécialistes capables de concevoir, déployer et maintenir des solutions informatiques au service des entreprises et administrations. 
+             La formation aborde aussi bien les réseaux que le développement, avec un volet essentiel dédié à la cybersécurité et à la protection des données.
+          </p>
+        </div>
+
+        <!-- Logos empilés verticalement -->
+        <div class="col-md-3 d-flex flex-column align-items-center mt-3 mt-md-0">
+          <img src="image_logo/logo-mediaschool_yen3nk.jpg" alt="Logo 1" style="height: 80px; margin-bottom: 10px;">
+        </div>
+      </div>
+    </div>
+
+    <!-- Cartes des options sur la même ligne -->
+    <div class="row g-4">
+      <!-- Carte Option SISR -->
+      <div class="col-md-6">
+        <div class="card option-card h-100 shadow-sm" style="border-radius: 12px;">
+          <div class="card-body">
+            <h4 class="card-title">Option SISR</h4>
+            <p class="card-text">
+              <strong>Solutions d'Infrastructure, Systèmes et Réseaux</strong> : cette spécialité est orientée vers l'installation, la configuration et la sécurisation des équipements réseaux et systèmes.
+              Les étudiants apprennent à gérer des infrastructures informatiques, assurer leur maintenance, et garantir leur sécurité.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte Option SLAM -->
+      <div class="col-md-6">
+        <div class="card option-card h-100 shadow-sm" style="border-radius: 12px;">
+          <div class="card-body">
+            <h4 class="card-title">Option SLAM</h4>
+            <p class="card-text">
+              <strong>Solutions Logicielles et Applications Métiers</strong> : cette spécialité prépare aux métiers du développement logiciel.
+              Les étudiants conçoivent et développent des applications, intègrent des bases de données et assurent leur maintien en conditions opérationnelles.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
+
 
 <!-- Footer -->
 <footer class="bg-dark text-white text-center py-3">
