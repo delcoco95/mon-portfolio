@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - Portfolio Nedj Belloum</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- AOS Animation CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico">
-    <style>
-        body {
-            scroll-behavior: smooth;
-        }
-        header {
-            background-color: #4a5568; /* bleu-gris */
-        }
-        .nav-link.active {
-            font-weight: bold;
-            border-bottom: 2px solid #fff;
-        }
-        .option-card {
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .option-card:hover {
-          transform: translateY(-8px);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil - Portfolio Nedj Belloum</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    header {
+      background: url('image_logo/fondpage\ dacceuil.jpg') no-repeat center center;
+      background-size: cover;
+      position: relative;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6); /* filtre sombre */
+      z-index: 1;
+    }
+    header .container {
+      position: relative;
+      z-index: 2;
+    }
+    #about {
+      scroll-margin-top: 50px;
+    }
+    .nav-link.active {
+      font-weight: bold;
+      border-bottom: 2px solid #fff;
+    }
+    .option-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .option-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+  </style>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100" tabindex="0">
 
@@ -75,8 +91,6 @@
 <section id="about" class="py-5 bg-light">
   <div class="container" data-aos="fade-up">
     <div class="row align-items-center">
-      
-      <!-- Texte -->
       <div class="col-md-8">
         <h2 class="mb-4">À propos de moi</h2>
         <p>
@@ -84,45 +98,35 @@
           Passionné par l’informatique et les nouvelles technologies, je me forme aux infrastructures, systèmes et réseaux.
         </p>
       </div>
-
-      <!-- CV -->
       <div class="col-md-4 text-md-end text-center mt-4 mt-md-0">
         <a href="image_logo/CV_alternanceTechInfo_Nedj_Belloum.pdf" target="_blank" class="btn btn-dark">
           <i class="bi bi-file-earmark-person-fill me-2"></i> Voir mon CV
         </a>
       </div>
-
     </div>
   </div>
 </section>
-
 
 <!-- BTS SIO -->
 <section id="bts" class="py-5">
   <div class="container" data-aos="fade-up">
     <h2 class="mb-4">Le BTS SIO</h2>
 
-    <!-- Carte principale BTS SIO -->
     <div class="card mb-5 shadow-sm" style="border-radius: 12px;">
       <div class="card-body d-flex flex-wrap justify-content-between align-items-start">
-        <!-- Texte -->
         <div class="col-md-8">
           <p class="mb-0">
-             Le BTS SIO forme des spécialistes capables de concevoir, déployer et maintenir des solutions informatiques au service des entreprises et administrations. 
-             La formation aborde aussi bien les réseaux que le développement, avec un volet essentiel dédié à la cybersécurité et à la protection des données.
+            Le BTS SIO forme des spécialistes capables de concevoir, déployer et maintenir des solutions informatiques au service des entreprises et administrations. 
+            La formation aborde aussi bien les réseaux que le développement, avec un volet essentiel dédié à la cybersécurité et à la protection des données.
           </p>
         </div>
-
-        <!-- Logos empilés verticalement -->
         <div class="col-md-3 d-flex flex-column align-items-center mt-3 mt-md-0">
           <img src="image_logo/logo-mediaschool_yen3nk.jpg" alt="Logo 1" style="height: 80px; margin-bottom: 10px;">
         </div>
       </div>
     </div>
 
-    <!-- Cartes des options sur la même ligne -->
     <div class="row g-4">
-      <!-- Carte Option SISR -->
       <div class="col-md-6">
         <div class="card option-card h-100 shadow-sm" style="border-radius: 12px;">
           <div class="card-body">
@@ -135,7 +139,6 @@
         </div>
       </div>
 
-      <!-- Carte Option SLAM -->
       <div class="col-md-6">
         <div class="card option-card h-100 shadow-sm" style="border-radius: 12px;">
           <div class="card-body">
@@ -151,14 +154,13 @@
   </div>
 </section>
 
-
 <!-- Footer -->
 <footer class="bg-dark text-white text-center py-3">
   <p class="mb-0">© 2025 Nedj Belloum. Tous droits réservés. 
     <a href="mentions-legales.html" class="text-white-50">Mentions légales</a>
-    <a href="https://www.linkedin.com/in/nedj-b-002558194/">LinkedIn</a> | 
-    <a href="https://github.com/">GitHub</a>
-</p>
+    <a href="https://www.linkedin.com/in/nedj-b-002558194/" target="_blank" rel="noopener noreferrer">LinkedIn</a> | 
+    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+  </p>
 </footer>
 
 <!-- Scripts -->

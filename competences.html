@@ -116,6 +116,12 @@
         </table>
       </div>
     </div>
+    <div class="text-center mt-3">
+      <a href="image_logo/Tableau_Competences_Nedj_Belloum.pdf" target="_blank" class="btn btn-dark" download>
+        <i class="bi bi-download me-2"></i> Télécharger le tableau en PDF
+      </a>
+    </div>
+
       <!-- Bouton flèche vers le bas -->
       <div class="text-center mt-4">
         <a href="#certifications" class="btn btn-outline-dark rounded-circle shadow-sm scroll-down-btn" aria-label="Descendre">
@@ -162,25 +168,97 @@
   </section>
 
   <!-- Patrimoine Informatique -->
-  <section class="py-5 bg-light">
-    <div class="container" data-aos="fade-up">
-      <h2 class="mb-4 icon-title"><i class="bi bi-hdd-network section-icon"></i> Gestion du patrimoine informatique</h2>
-      <p>Grâce à mes projets, j'ai pu intervenir sur :</p>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">Le déploiement de systèmes virtualisés avec VMware et VirtualBox</li>
-        <li class="list-group-item">La gestion de parc informatique avec GLPI</li>
-        <li class="list-group-item">La mise en place de solutions de sauvegarde et supervision</li>
-        <li class="list-group-item">La configuration de services réseau (AD, DNS, DHCP)</li>
-      </ul>
+<section class="py-5 bg-light">
+  <div class="container" data-aos="fade-up">
+    <h2 class="mb-4 icon-title">
+      <i class="bi bi-hdd-network section-icon"></i> Gestion du patrimoine informatique
+    </h2>
+    <p>
+      Cette thématique a été au cœur de plusieurs de mes projets et expériences (stage, alternance, travaux pratiques). J’ai mis en œuvre différentes solutions pour installer, maintenir, sécuriser et superviser les ressources informatiques d’un parc.
+    </p>
+
+    <div class="accordion" id="accordionPatrimoine">
+
+      <!-- Virtualisation -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            Virtualisation (VMware & VirtualBox)
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionPatrimoine">
+          <div class="accordion-body">
+            Création de laboratoires virtuels avec <strong>VMware Workstation</strong> et <strong>VirtualBox</strong> pour simuler des infrastructures réseau. <br>
+            ➤ Installation de <em>Windows Server 2019/2022</em> et de distributions Linux (Debian) <br>
+            ➤ Gestion de snapshots, paramétrage réseau NAT/bridge, tests d’interconnexion et d’authentification. <br>
+            ➤ Utilisation dans le cadre de TP et de projets de déploiement simulé d’entreprise.
+          </div>
+        </div>
+      </div>
+
+      <!-- GLPI -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Gestion de parc informatique
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionPatrimoine">
+          <div class="accordion-body">
+            Mise en place d’un suivi du matériel informatique dans le cadre de mes projets et de ma formation : <br>
+            ➤ Recensement des postes utilisateurs, imprimantes et périphériques réseau dans un <strong>fichier d’inventaire Excel</strong> <br>
+            ➤ Identification des caractéristiques techniques (modèle, OS, RAM, numéro de série) <br>
+            ➤ Mise à jour manuelle après simulation d’installation ou de remplacement de matériel <br>
+            ➤ Initiation à la gestion documentaire pour préparer un futur déploiement d’un outil comme GLPI.
+          </div>
+        </div>
+      </div>
+
+      <!-- Sauvegarde et supervision -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+            Sauvegarde & Supervision
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionPatrimoine">
+          <div class="accordion-body">
+            Réalisation de scénarios de sauvegarde et supervision dans un environnement simulé : <br>
+            ➤ Création de script <strong>PowerShell</strong> pour copier automatiquement des dossiers ou faciliter les tâches sur Windows Server <br>
+            ➤ Tests de sauvegarde/restauration sur des machines virtuelles (fichiers critiques, images système) <br>
+            ➤ Introduction aux principes de supervision : <em>ping, vérification d’état de services, suivi de l’utilisation du disque</em> via des outils natifs (Task Manager, services.msc, événements Windows) <br>
+            ➤ Préparation à l’utilisation de solutions comme Veeam, Zabbix ou autres outils de supervision professionnelle.
+          </div>
+        </div>
+      </div>
+
+      <!-- Services Réseau -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+            Configuration de services réseau (AD, DNS, DHCP)
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionPatrimoine">
+          <div class="accordion-body">
+            Installation et configuration de services essentiels à toute infrastructure : <br>
+            ➤ Création d’un domaine Active Directory, gestion des comptes utilisateurs et des GPO (stratégies de sécurité) <br>
+            ➤ Mise en place d’un serveur DNS interne et paramétrage d’un service DHCP dynamique <br>
+            ➤ Simulation d’une architecture d’entreprise : serveur DC, clients Windows, attribution automatique d’adresses IP.
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3">
     <p class="mb-0">© 2025 Nedj Belloum. Tous droits réservés. 
         <a href="mentions-legales.html" class="text-white-50">Mentions légales</a>
-        <a href="https://www.linkedin.com/in/nedj-b-002558194/">LinkedIn</a> | 
-        <a href="https://github.com/">GitHub</a>
+        <a href="https://www.linkedin.com/in/nedj-b-002558194/" target="_blank" rel="noopener noreferrer">LinkedIn</a> | 
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
     </p>
   </footer>
 
