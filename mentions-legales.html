@@ -1,53 +1,82 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mentions légales - Portfolio Nedj Belloum</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Informations légales - Portfolio Nedj Belloum</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <style>
-    header {
-      background-color: #4a5568;
-    }
-    body {
-      scroll-behavior: smooth;
-    }
+    header { background-color: #4a5568; }
+    body { scroll-behavior: smooth; }
+    a { text-decoration: none; }
   </style>
 </head>
 <body>
-  <!-- Header -->
+
+  <!-- En-tête -->
   <header class="py-5 text-white text-center">
     <div class="container">
-      <h1 class="display-5">Mentions Légales</h1>
+      <h1 class="display-5">Informations légales</h1>
     </div>
   </header>
 
-  <!-- Contenu des mentions légales -->
+  <!-- Section principale -->
   <section class="py-5 bg-light">
     <div class="container">
+
+      <!-- Éditeur -->
       <h2>Éditeur du site</h2>
       <p><strong>Nom :</strong> Nedj Belloum</p>
-      <p><strong>Email :</strong> nedjpro06@gmail.com</p>
+      <p><strong>Contact :</strong> <a href="mailto:nedjpro06@gmail.com">nedjpro06@gmail.com</a></p>
       <p><strong>Localisation :</strong> Nice, France</p>
 
-      <h2>Hébergement</h2>
-      <p>Ce site est hébergé par une plateforme d’hébergement fictive à des fins de présentation de portfolio personnel.</p>
+      <!-- Hébergement -->
+      <h2 class="mt-5">Hébergement</h2>
+      <p>Site hébergé à des fins non commerciales sur une infrastructure fictive dans le cadre d’un projet de présentation personnel.</p>
 
-      <h2>Propriété intellectuelle</h2>
-      <p>L’ensemble du contenu présent sur ce site (textes, images, logos, etc.) est la propriété exclusive de Nedj Belloum, sauf mention contraire. Toute reproduction, représentation ou diffusion, même partielle, est interdite sans autorisation.</p>
+      <!-- Propriété intellectuelle -->
+      <h2 class="mt-5">Droits d’auteur & propriété</h2>
+      <p>L’ensemble des contenus du site (textes, images, logos...) sont protégés par le droit d’auteur, sauf mention contraire. Toute reproduction, même partielle, est interdite sans autorisation écrite préalable.</p>
 
-      <h2>Données personnelles</h2>
-      <p>Aucune donnée personnelle n’est collectée sans votre consentement. Le formulaire de contact est uniquement destiné à faciliter la prise de contact et ne fait l’objet d’aucune collecte automatisée.</p>
+      <!-- Politique de confidentialité -->
+      <h2 class="mt-5">Confidentialité et données personnelles</h2>
+      <p>Ce site ne collecte pas de données personnelles à des fins commerciales.</p>
+      <ul>
+        <li>Les informations envoyées via le formulaire de contact sont utilisées uniquement pour répondre aux demandes et ne sont ni stockées, ni partagées.</li>
+        <li>Aucun cookie de suivi ou publicitaire n’est utilisé. Seuls des cookies techniques essentiels peuvent être présents.</li>
+      </ul>
 
-      <h2>Responsabilité</h2>
-      <p>Ce site est un projet personnel à but non commercial. Les informations présentes sont données à titre indicatif et n’engagent pas la responsabilité de son auteur.</p>
+      <!-- Responsabilité -->
+      <h2 class="mt-5">Responsabilité</h2>
+      <p>Ce site est à but purement informatif. Les informations fournies ne sauraient engager la responsabilité de son auteur en cas d’erreur ou d’omission.</p>
+
+      <!-- Plan du site -->
+      <h2 class="mt-5">Plan du site</h2>
+      <ul class="list-group">
+        <li class="list-group-item"><a href="index.html">Accueil</a></li>
+        <li class="list-group-item"><a href="projets.html">Projets</a></li>
+        <li class="list-group-item"><a href="competences.html">Compétences</a></li>
+        <li class="list-group-item"><a href="veille.html">Veille</a></li>
+        <li class="list-group-item"><a href="contact.html">Contact</a></li>
+        <li class="list-group-item"><a href="#">Informations légales</a></li>
+      </ul>
+
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Pied de page -->
   <footer class="bg-dark text-white text-center py-3">
-    <p class="mb-0">© 2025 Nedj Belloum. Tous droits réservés.</p>
+    <p class="mb-0 d-flex justify-content-center align-items-center gap-3 flex-wrap">
+      © 2025 Nedj Belloum. Tous droits réservés.
+      <a href="#top" class="text-white-50">Haut de page</a> |
+      <a href="https://www.linkedin.com/in/nedj-b-002558194/" target="_blank" rel="noopener noreferrer">
+        <img src="image_logo/linkedin.svg" alt="LinkedIn" style="width: 24px; height: 24px;">
+      </a>
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+        <img src="image_logo/github.svg" alt="GitHub" style="width: 24px; height: 24px;">
+      </a>
+    </p>
   </footer>
+
 </body>
 </html>
