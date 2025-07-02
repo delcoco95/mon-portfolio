@@ -86,12 +86,22 @@
             <tr>
               <td>Gérer le patrimoine informatique</td>
               <td>Inventaire, maintenance, gestion des postes et serveurs</td>
-              <td>Stage Resistex & Alternance Groupe Ragni 🕒 <strong>A venir</strong></td>
+              <td>
+                Stage Resistex & Alternance Groupe Ragni 
+                <span data-bs-toggle="tooltip" title="Compétence qui sera aquise pendant le stage et l'alternance" style="cursor: help; margin-left: 5px;">
+                  ❓
+                </span>
+              </td>
             </tr>
             <tr>
               <td>Répondre aux incidents et demandes d’assistance</td>
               <td>Support, tickets, résolution d'incidents</td>
-              <td>CDI Pickup, Stage Résistex & Alternance Groupe Ragni 🕒 <strong>A venir</strong></td>
+              <td>
+                Stage Résistex & Alternance Groupe Ragni 
+                <span data-bs-toggle="tooltip" title="Compétence qui sera aquise pendant le stage et l'alternance" style="cursor: help; margin-left: 5px;">
+                  ❓
+                </span>
+              </td>
             </tr>
             <tr>
               <td>Mettre à disposition des services réseau</td>
@@ -257,7 +267,7 @@
     <a href="https://www.linkedin.com/in/nedj-b-002558194/" target="_blank" rel="noopener noreferrer">
       <img src="image_logo/linkedin.svg" alt="LinkedIn" style="width: 24px; height: 24px;">
     </a>
-    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+    <a href="https://github.com/delcoco95" target="_blank" rel="noopener noreferrer">
       <img src="image_logo/github.svg" alt="GitHub" style="width: 24px; height: 24px;">
     </a>
   </p>
@@ -269,5 +279,10 @@
   <script>
     AOS.init();
   </script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(el => new bootstrap.Tooltip(el))
+  </script>
+
 </body>
 </html>
