@@ -41,6 +41,22 @@
       font-weight: bold;
       border-bottom: 2px solid #fff;
     }
+    .icon-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-icon {
+      font-size: 1.5rem;
+      color: #4a5568;
+    }
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
     .option-card {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
@@ -48,6 +64,7 @@
       transform: translateY(-8px);
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     }
+    .cv-pill { display:inline-block; padding:.25rem .6rem; border:1px solid #222; border-radius:999px; font-weight:600; }
   </style>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100" tabindex="0">
@@ -63,7 +80,7 @@
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link active" href="#hero">Accueil</a></li>
         <li class="nav-item"><a class="nav-link" href="projets.html">Projets</a></li>
-        <li class="nav-item"><a class="nav-link" href="experiences.html">Expériences</a></li>
+        <li class="nav-item"><a class="nav-link" href="entreprise.html">Entreprise</a></li>
         <li class="nav-item"><a class="nav-link" href="competences.html">Compétences</a></li>
         <li class="nav-item"><a class="nav-link" href="veille.html">Veille</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -93,6 +110,7 @@
         </p>
       </div>
       <div class="col-md-4 text-md-end text-center mt-4 mt-md-0">
+        <a class="btn btn-primary" href="projets.html">Voir mes projets</a>
         <a href="image_logo/CV_alternanceTechInfo_Nedj_Belloum.pdf" target="_blank" class="btn btn-dark">
           <i class="bi bi-file-earmark-person-fill me-2"></i> Voir mon CV
         </a>
@@ -100,6 +118,114 @@
     </div>
   </div>
 </section>
+
+<!-- Section Expériences Professionnelles -->
+  <section class="pb-5 pt-5">
+    <div class="container">
+      <h2 class="mb-4 icon-title">
+        <i class="bi bi-briefcase-fill section-icon"></i> Mes expériences
+      </h2>
+      <div class="row g-4">
+
+        <!-- Groupe Ragni -->
+        <div class="col-md-6">
+          <div class="card text-center h-100 card-hover position-relative">
+            <a href="https://www.ragni.com/" target="_blank" class="stretched-link" rel="noopener noreferrer"></a>
+            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+              <div class="ratio ratio-1x1" style="width: 100px; margin-bottom: 10px;">
+                <img src="image_logo/groupe ragni.jpeg" alt="Logo Groupe Ragni" class="img-fluid" style="object-fit: contain;">
+              </div>
+              <h5 class="card-title">Technicien Informatique - Groupe Ragni</h5>
+              <p class="card-text"><strong>Dates :</strong> Septembre 2025 - Août 2027 (Alternance à venir)</p>
+              <p class="card-text">Gestion des équipements informatiques, support technique, déploiement des infrastructures.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resistex -->
+        <div class="col-md-6">
+          <div class="card text-center h-100 card-hover position-relative">
+            <a href="https://www.resistex-sa.com/fr/" target="_blank" class="stretched-link" rel="noopener noreferrer"></a>
+            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+              <div style="width: 100px; height: 100px; margin-bottom: 10px;">
+                <img src="image_logo/logoresistex.png" alt="Logo Resistex" class="img-fluid" style="object-fit: contain; width: 100%; height: 100%;">
+              </div>
+              <h5 class="card-title">Administrateur Système et Réseau - Resistex</h5>
+              <p class="card-text"><strong>Dates :</strong> Juillet 2025 - Août 2025</p>
+              <p class="card-text">Supervision des réseaux, maintenance des systèmes, optimisation IT.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- MSCAR -->
+        <div class="col-md-6">
+          <div class="card text-center h-100 card-hover position-relative">
+            <a href="#" class="stretched-link"></a>
+            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+              <div class="ratio ratio-1x1" style="width: 100px; margin-bottom: 10px;">
+                <img src="image_logo/LOGO MSCAR.png" alt="Logo MSCAR" class="img-fluid" style="object-fit: contain;">
+              </div>
+              <h5 class="card-title">Associé Auto - MSCAR</h5>
+              <p class="card-text"><strong>Dates :</strong> 2023 - 2024</p>
+              <p class="card-text">Élaboration de projet, gestion des véhicules d'occasion, suivi des ventes.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pickup -->
+        <div class="col-md-6">
+          <div class="card text-center h-100 card-hover position-relative">
+            <a href="https://www.pickup.fr/" target="_blank" class="stretched-link" rel="noopener noreferrer"></a>
+            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+              <div style="width: 100px; height: 100px; margin-bottom: 10px;">
+                <img src="image_logo/Logo_Pickup.svg.png" alt="Logo Pickup" class="img-fluid" style="object-fit: contain; width: 100%; height: 100%;">
+              </div>
+              <h5 class="card-title">Agent de support Dispatcher - Pickup</h5>
+              <p class="card-text"><strong>Dates :</strong> 2021 - 2024</p>
+              <p class="card-text">Coordination des tournées, support technique, résolution des incidents logistiques.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications" class="py-5 bg-light">
+    <div class="container" data-aos="fade-up">
+      <h2 class="mb-4 icon-title"><i class="bi bi-award-fill section-icon"></i> Certifications </h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 text-center card-hover">
+            <div class="card-body">
+              <img src="image_logo/cisco.png" alt="Cisco" class="img-fluid mb-3" style="max-height: 50px;">
+              <h5 class="card-title">Cisco – Introduction to Networks</h5>
+              <p class="card-text">Initiation aux réseaux, adressage IP, modèle OSI, routage et commutation.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center card-hover">
+            <div class="card-body">
+              <img src="image_logo/Logo ANSSI.webp" alt="ANSSI" class="img-fluid mb-3" style="max-height: 50px;">
+              <h5 class="card-title">ANSSI – Sensibilisation à la cybersécurité</h5>
+              <p class="card-text">Bonnes pratiques, sécurité des mots de passe, risques numériques, RGPD.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center card-hover">
+            <div class="card-body">
+              <img src="image_logo/Fortinet-logo-rgb-black-red.svg" alt="CompTIA+" class="img-fluid mb-3" style="max-height: 50px;">
+              <h5 class="card-title">FortiNet – NSE 1/2</h5>
+              <p class="card-text">Reconnaître les attaques (phishing, ransomware, etc.) et Comprendre les règles de filtrage et les politiques d’accès.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 <!-- BTS SIO -->
 <section id="bts" class="py-5">
@@ -160,6 +286,9 @@
     </a>
     <a href="https://github.com/delcoco95" target="_blank" rel="noopener noreferrer">
       <img src="image_logo/github.svg" alt="GitHub" style="width: 24px; height: 24px;">
+    </a>
+    <a href="image_logo/CV_alternanceTechInfo_Nedj_Belloum.pdf" target="_blank" rel="noopener" aria-label="CV (PDF)">
+      <span class="cv-pill">CV</span>
     </a>
   </p>
 </footer>
