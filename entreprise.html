@@ -81,98 +81,103 @@
     </div>
   </section>
 
-  <!-- ===== Rôle & missions (alignés aux projets) ===== -->
-  <section id="missions" class="py-5 bg-light" aria-label="Missions en alternance">
-    <div class="container">
-      <h2 class="mb-4 icon-title">
-        <i class="bi bi-briefcase-fill section-icon"></i> Mon rôle — Aligné aux projets
-      </h2>
+<!-- ===== Rôle & missions (alignés aux projets) ===== -->
+<section id="missions" class="py-5 bg-light" aria-label="Missions en alternance">
+  <div class="container">
+    <h2 class="mb-4 icon-title">
+      <i class="bi bi-briefcase-fill section-icon"></i> Mon rôle — Aligné aux projets
+    </h2>
 
-      <div class="row g-4">
-        <!-- Cloud / VMware -->
-        <div class="col-md-6">
-          <div class="card h-100">
-            <div class="card-body">
-              <h3 class="h5 mb-3"><i class="bi bi-cloud-check"></i> Move to Cloud (VMware / Tersedia)</h3>
-              <ul class="mb-0">
-                <li>Préparer et documenter les templates de VM, snapshots, procédures PRA</li>
-                <li>Effectuer des migrations pilotes et vérifier la supervision post‑bascules</li>
-                <li>Rédiger la checklist sécurité (accès, sauvegarde, segmentation)</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- AD / Entra ID -->
-        <div class="col-md-6">
-          <div class="card h-100">
-            <div class="card-body">
-              <h3 class="h5 mb-3"><i class="bi bi-diagram-3"></i> Refonte AD (multi‑filiales)</h3>
-              <ul class="mb-0">
-                <li>Proposer une arborescence OU et des GPO standards</li>
-                <li>Durcir les comptes à privilèges, MFA et PAM (baseline)</li>
-                <li>Participer au sync Entra ID & gouvernance des groupes</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- Sécurité -->
-        <div class="col-md-6">
-          <div class="card h-100">
-            <div class="card-body">
-              <h3 class="h5 mb-3"><i class="bi bi-shield-check"></i> Sécurité & conformité</h3>
-              <ul class="mb-0">
-                <li>Mettre en place des politiques Conditional Access (M365)</li>
-                <li>Contribuer au déploiement ZTNA Fortinet, suivi SOC Sophos</li>
-                <li>Participer aux audits : journaux, correctifs, antispam</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- O365 -->
-        <div class="col-md-6">
-          <div class="card h-100">
-            <div class="card-body">
-              <h3 class="h5 mb-3"><i class="bi bi-microsoft"></i> Migration O365</h3>
-              <ul class="mb-0">
-                <li>Préparer les plans de migration mail (coexistence / hybridation)</li>
-                <li>Normaliser les licences, groupes et conventions d’identité</li>
-                <li>Accompagner les utilisateurs (guides, FAQ, supports)</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- Réseau -->
-        <div class="col-md-6">
-          <div class="card h-100">
-            <div class="card-body">
-              <h3 class="h5 mb-3"><i class="bi bi-router"></i> Réseau (FortiGate / VPN)</h3>
-              <ul class="mb-0">
-                <li>Configurer des politiques, NAT, et segmentation VLAN</li>
-                <li>Contribuer aux tunnels IPsec site‑to‑site & tests de résilience</li>
-                <li>Mettre à jour la documentation (schémas, IP plan)</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- Supervision & sauvegarde -->
-        <div class="col-md-6">
-          <div class="card h-100">
-            <div class="card-body">
-              <h3 class="h5 mb-3"><i class="bi bi-activity"></i> Supervision & sauvegarde</h3>
-              <ul class="mb-0">
-                <li>Créer des sondes PRTG (latence, services AD/M365, ressources)</li>
-                <li>Automatiser des tâches courantes via PowerShell</li>
-                <li>Vérifier les jobs Veeam et réaliser des restaurations tests</li>
-              </ul>
-            </div>
+    <div class="row g-4">
+      <!-- Migration Windows 10 -> 11 -->
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="h5 mb-3"><i class="bi bi-windows"></i> Migration des postes (Windows 10 → 11)</h3>
+            <ul class="mb-0">
+              <li>Migration de Windows 10 vers 11 sur postes utilisateurs</li>
+              <li>Rédaction d’une procédure détaillée (pré-requis, étapes, post-migration)</li>
+              <li>Ajout de conseils et résolutions en cas d’échec (migration ratée, profil corrompu, etc.)</li>
+            </ul>
           </div>
         </div>
       </div>
 
+      <!-- Onboarding & postes -->
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="h5 mb-3"><i class="bi bi-pc-display"></i> Mise en service & onboarding</h3>
+            <ul class="mb-0">
+              <li>Mise en place de nouveaux postes pour les nouveaux employés</li>
+              <li>Création et configuration des profils (sessions) utilisateurs</li>
+              <li>Paramétrages de base et vérifications de bon fonctionnement</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Active Directory & automatisation -->
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="h5 mb-3"><i class="bi bi-diagram-3"></i> Active Directory & automatisation</h3>
+            <ul class="mb-0">
+              <li>Création d’un script PowerShell pour mettre à jour les infos utilisateurs depuis un CSV RH</li>
+              <li>Workflow contrôlé : réception RH, vérification, implémentation dans le script</li>
+              <li>Ajout d’utilisateurs dans les groupes via l’AD et gestion des droits de base</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Support applicatif & M365 -->
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="h5 mb-3"><i class="bi bi-tools"></i> Support utilisateurs & applicatif (M365 / métiers)</h3>
+            <ul class="mb-0">
+              <li>Résolution de bugs applicatifs (Cegid, Outlook, Teams, …)</li>
+              <li>Réinstallation et réparation via lignes de commande lorsque nécessaire</li>
+              <li>Conseils utilisateurs et vérifications post-correction</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gestion de parc & inventaire -->
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="h5 mb-3"><i class="bi bi-clipboard-data"></i> Gestion de parc & inventaire (Cockpit)</h3>
+            <ul class="mb-0">
+              <li>Inventaire du parc informatique dans l’outil Cockpit</li>
+              <li>Rattachement précis des équipements aux employés</li>
+              <li>Saisie et suivi des garanties</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Documentation & capitalisation -->
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="h5 mb-3"><i class="bi bi-journal-check"></i> Documentation & capitalisation</h3>
+            <ul class="mb-0">
+              <li>Procédure de migration Windows 11 (pas-à-pas + troubleshooting)</li>
+              <li>Mise à jour de la documentation associée aux traitements récurrents</li>
+              <li>Structuration des conseils pratiques pour gain de temps au support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
       <!-- Livrables & environnement -->
       <div class="row g-4 mt-1">
         <div class="col-md-6">
-          <div class="card h-100 border-0 bg-light">
+          <div class="card h-100 border-0">
             <div class="card-body">
               <h3 class="h6 text-uppercase text-muted mb-3">Livrables clés</h3>
               <ul class="mb-0">
@@ -184,7 +189,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card h-100 border-0 bg-light">
+          <div class="card h-100 border-0">
             <div class="card-body">
               <h3 class="h6 text-uppercase text-muted mb-3">Environnement & outils</h3>
               <ul class="list-inline mb-0 small text-muted">
