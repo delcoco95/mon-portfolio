@@ -70,146 +70,309 @@
     </div>
   </header>
 
-  <!-- Tableau de compétences -->
-  <section class="py-5 bg-light">
-    <div class="container" data-aos="fade-up">
-      <h2 class="mb-4 icon-title"><i class="bi bi-bar-chart-fill section-icon"></i> Tableau de synthèse des compétences</h2>
-      <p>Voici un extrait de mes compétences validées à travers mes projets et expériences :</p>
-      <div class="table-responsive">
-        <table class="table table-bordered table-hover">
-          <thead class="table-dark">
-            <tr>
-              <th>Compétence</th>
-              <th>Description</th>
-              <th>Justification</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Gérer le patrimoine informatique</td>
-              <td>Inventaire, maintenance, gestion des postes et serveurs</td>
-              <td>
-                Stage Resistex & Alternance Groupe Ragni 
-              </td>
-            </tr>
-            <tr>
-              <td>Répondre aux incidents et demandes d’assistance</td>
-              <td>Support, tickets, résolution d'incidents</td>
-              <td>
-                Stage Résistex & Alternance Groupe Ragni 
-              </td>
-            </tr>
-            <tr>
-              <td>Mettre à disposition des services réseau</td>
-              <td>Installation d'AD, DNS, DHCP, serveur web</td>
-              <td>TP Windows Serveur</td>
-            </tr>
-            <tr>
-              <td>Sécuriser les équipements et les données</td>
-              <td>Mise en place de firewall, gestion des accès</td>
-              <td>TP Cybersécurité et Réseau</td>
-            </tr>
-            <tr>
-              <td>Déployer des services et outils open source</td>
-              <td>Installation de Nextcloud, Apache2, Docker</td>
-              <td>Projets personnels & TP Réseau</td>
-            </tr>
-          </tbody>
-        </table>
+<!-- Tableau de compétences (version accordéon) -->
+<section class="py-5 bg-light">
+  <div class="container" data-aos="fade-up">
+    <h2 class="mb-4 icon-title">
+      <i class="bi bi-bar-chart-fill section-icon"></i> Tableau de synthèse des compétences
+    </h2>
+    <p>
+      Voici mes compétences principales validées durant mon alternance au Groupe Ragni, mon stage chez Résistex,
+      ainsi que mes projets et travaux pratiques réalisés en BTS SIO (option SISR).
+    </p>
+
+    <div class="accordion" id="accordionCompetences">
+
+      <!-- SYSTÈMES & POSTES -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSystemes">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSystemes" aria-expanded="true" aria-controls="collapseSystemes">
+            Systèmes & postes
+          </button>
+        </h2>
+        <div id="collapseSystemes" class="accordion-collapse collapse show" aria-labelledby="headingSystemes" data-bs-parent="#accordionCompetences">
+          <div class="accordion-body">
+            <ul class="mb-0">
+              <li>
+                <strong>Gérer le patrimoine informatique</strong> : inventaire du parc, suivi des postes, gestion des serveurs et équipements.
+                <br><span class="text-muted small">Justification : Stage Résistex & alternance Groupe Ragni (inventaire Cockpit, préparation budget IT 2026).</span>
+              </li>
+              <li class="mt-2">
+                <strong>Administration Windows 10 / 11 & Windows Server 2022</strong> : installation, déploiement, gestion des profils utilisateurs.
+                <br><span class="text-muted small">Justification : Alternance Groupe Ragni (déploiement de postes, onboarding utilisateurs).</span>
+              </li>
+              <li class="mt-2">
+                <strong>Gestion Active Directory (AD, OU, GPO)</strong> : création / modification de comptes, organisation en OU, application de GPO et droits.
+                <br><span class="text-muted small">Justification : RP Windows Server & alternance Groupe Ragni (script PowerShell, gestion AD).</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="text-center mt-3">
-      <a href="image_logo/Tableau de synthèse - Epreuve E4 - BTS SIO.pdf" target="_blank" class="btn btn-dark">
-        <i class="bi bi-download me-2"></i> Télécharger le tableau de synthèse
-      </a>
-    </div>
 
-      <!-- Bouton flèche vers le bas -->
-      <div class="text-center mt-4">
-        <a href="#gestion" class="btn btn-outline-dark rounded-circle shadow-sm scroll-down-btn" aria-label="Descendre">
-          <i class="bi bi-chevron-down" style="font-size: 1.5rem;"></i>
-        </a>
+      <!-- CLOUD & MICROSOFT 365 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingCloud">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCloud" aria-expanded="false" aria-controls="collapseCloud">
+            Cloud & Microsoft 365
+          </button>
+        </h2>
+        <div id="collapseCloud" class="accordion-collapse collapse" aria-labelledby="headingCloud" data-bs-parent="#accordionCompetences">
+          <div class="accordion-body">
+            <ul class="mb-0">
+              <li>
+                <strong>Mettre à disposition des services Microsoft 365</strong> : OneDrive, Teams, SharePoint, Exchange Online pour les utilisateurs.
+                <br><span class="text-muted small">Justification : Alternance Groupe Ragni (support Outlook / Teams, usages collaboratifs).</span>
+              </li>
+              <li class="mt-2">
+                <strong>Migrer les données vers OneDrive</strong> : bascule des données du serveur de fichiers vers OneDrive, gestion des espaces et synchronisation.
+                <br><span class="text-muted small">Justification : Projet de migration OneDrive au Groupe Ragni (~5 To libérés sur le serveur).</span>
+              </li>
+              <li class="mt-2">
+                <strong>Gérer les identités dans Entra ID / Azure AD</strong> : gestion des comptes, droits d’accès et intégration avec les services M365.
+                <br><span class="text-muted small">Justification : Alternance Groupe Ragni (environnement hybride AD / Entra ID).</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
+
+      <!-- RÉSEAU & SÉCURITÉ -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingReseau">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReseau" aria-expanded="false" aria-controls="collapseReseau">
+            Réseau & sécurité
+          </button>
+        </h2>
+        <div id="collapseReseau" class="accordion-collapse collapse" aria-labelledby="headingReseau" data-bs-parent="#accordionCompetences">
+          <div class="accordion-body">
+            <ul class="mb-0">
+              <li>
+                <strong>Configurer et sécuriser un pare-feu</strong> : création de règles avec UFW, contrôle des flux réseau, supervision de base.
+                <br><span class="text-muted small">Justification : TP Réseau / Cybersécurité & projets personnels.</span>
+              </li>
+              <li class="mt-2">
+                <strong>Mettre en place des VLAN et une infrastructure de commutation</strong> : configuration de VLAN et switchs Cisco (Packet Tracer, serveur Mediaschool).
+                <br><span class="text-muted small">Justification : TP Réseau (Cisco Packet Tracer) & travaux pratiques de formation.</span>
+              </li>
+              <li class="mt-2">
+                <strong>Configurer des VPN (accès distant)</strong> : mise en place de VPN avec WireGuard et FortiClient pour sécuriser les connexions.
+                <br><span class="text-muted small">Justification : TP Réseau & projets personnels.</span>
+              </li>
+              <li class="mt-2">
+                <strong>Sécuriser la messagerie</strong> : utilisation d’une solution antispam (Sophos) et application de bonnes pratiques.
+                <br><span class="text-muted small">Justification : Alternance Groupe Ragni (environnement sécurisé avec antispam).</span>
+              </li>
+              <li class="mt-2">
+                <strong>Analyser le trafic réseau</strong> : capture et analyse de trames pour diagnostiquer des problèmes réseau avec Wireshark.
+                <br><span class="text-muted small">Justification : TP Réseau & travaux pratiques BTS SIO.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- SAUVEGARDES, VIRTUALISATION & SUPERVISION -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSauvegarde">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSauvegarde" aria-expanded="false" aria-controls="collapseSauvegarde">
+            Sauvegardes, virtualisation & supervision
+          </button>
+        </h2>
+        <div id="collapseSauvegarde" class="accordion-collapse collapse" aria-labelledby="headingSauvegarde" data-bs-parent="#accordionCompetences">
+          <div class="accordion-body">
+            <ul class="mb-0">
+              <li>
+                <strong>Mettre en place une stratégie de sauvegarde</strong> : sauvegardes Veeam quotidiennes en local et mensuelles sur disque externe, tests de restauration.
+                <br><span class="text-muted small">Justification : Alternance Groupe Ragni (sauvegarde des serveurs et données critiques).</span>
+              </li>
+              <li class="mt-2">
+                <strong>Utiliser la virtualisation</strong> : création de machines virtuelles et environnements de test avec VirtualBox.
+                <br><span class="text-muted small">Justification : TP Systèmes & projets personnels.</span>
+              </li>
+              <li class="mt-2">
+                <strong>Superviser et gérer le parc informatique</strong> : utilisation de Cockpit et GLPI (agents, inventaires, tickets, suivi de parc).
+                <br><span class="text-muted small">Justification : Stage Résistex & alternance Groupe Ragni.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUPPORT & HELPDESK -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSupport">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSupport" aria-expanded="false" aria-controls="collapseSupport">
+            Support & helpdesk
+          </button>
+        </h2>
+        <div id="collapseSupport" class="accordion-collapse collapse" aria-labelledby="headingSupport" data-bs-parent="#accordionCompetences">
+          <div class="accordion-body">
+            <ul class="mb-0">
+              <li>
+                <strong>Répondre aux incidents et demandes d’assistance</strong> : diagnostic, traitement des tickets, suivi des utilisateurs.
+                <br><span class="text-muted small">Justification : Stage Résistex & alternance Groupe Ragni.</span>
+              </li>
+              <li class="mt-2">
+                <strong>Assurer un support à distance</strong> : prise en main via TeamViewer, dépannage sur Outlook, Teams et logiciels métier.
+                <br><span class="text-muted small">Justification : Alternance Groupe Ragni (support utilisateur quotidien).</span>
+              </li>
+              <li class="mt-2">
+                <strong>Gérer les incidents matériels</strong> : diagnostic de pannes, remplacement de matériel, validation du bon fonctionnement.
+                <br><span class="text-muted small">Justification : Stage Résistex & alternance Groupe Ragni.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- SÉCURITÉ & GOUVERNANCE -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSecu">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecu" aria-expanded="false" aria-controls="collapseSecu">
+            Sécurité & gouvernance
+          </button>
+        </h2>
+        <div id="collapseSecu" class="accordion-collapse collapse" aria-labelledby="headingSecu" data-bs-parent="#accordionCompetences">
+          <div class="accordion-body">
+            <ul class="mb-0">
+              <li>
+                <strong>Rédiger une PSSI</strong> : définition des règles de sécurité (accès, sauvegardes, mots de passe, incidents…).
+                <br><span class="text-muted small">Justification : Alternance Groupe Ragni (PSSI adaptée au contexte de l’entreprise).</span>
+              </li>
+              <li class="mt-2">
+                <strong>Définir et appliquer des politiques de sécurité</strong> : politiques d’accès, gestion des droits, bonnes pratiques utilisateurs.
+                <br><span class="text-muted small">Justification : Alternance Groupe Ragni & travaux de formation.</span>
+              </li>
+              <li class="mt-2">
+                <strong>Documenter les procédures et projets</strong> : procédures Windows 11, guides OneDrive, documentation support.
+                <br><span class="text-muted small">Justification : Alternance Groupe Ragni (documentation opérationnelle).</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- SERVICES OPEN SOURCE -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOpenSource">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOpenSource" aria-expanded="false" aria-controls="collapseOpenSource">
+            Services open source
+          </button>
+        </h2>
+        <div id="collapseOpenSource" class="accordion-collapse collapse" aria-labelledby="headingOpenSource" data-bs-parent="#accordionCompetences">
+          <div class="accordion-body">
+            <ul class="mb-0">
+              <li>
+                <strong>Déployer des services et outils open source</strong> : installation et configuration de Nextcloud, Apache2, Docker pour des environnements de test.
+                <br><span class="text-muted small">Justification : Projets personnels & TP Réseau / Systèmes.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
 
+  <div class="text-center mt-3">
+    <a href="image_logo/Tableau de synthèse - Epreuve E4 - BTS SIO.pdf" target="_blank" class="btn btn-dark">
+      <i class="bi bi-download me-2"></i> Télécharger le tableau de synthèse
+    </a>
+  </div>
+</section>
 
-  <!-- Patrimoine Informatique -->
+ <!-- Patrimoine Informatique -->
 <section id="gestion" class="py-5 bg-light">
   <div class="container" data-aos="fade-up">
     <h2 class="mb-4 icon-title">
       <i class="bi bi-hdd-network section-icon"></i> Gestion du patrimoine informatique
     </h2>
     <p>
-      Cette thématique a été au cœur de plusieurs de mes projets et expériences (stage, alternance, travaux pratiques). J’ai mis en œuvre différentes solutions pour installer, maintenir, sécuriser et superviser les ressources informatiques d’un parc.
+      Au-delà des compétences techniques, cette partie illustre comment j’ai concrètement géré le patrimoine
+      informatique au travers de projets menés en alternance et en formation : inventaire, sauvegardes, gestion de parc
+      et mise en place d’environnements de test.
     </p>
 
     <div class="accordion" id="accordionPatrimoine">
 
-      <!-- Virtualisation -->
+      <!-- Projet 1 : Inventaire & gestion de parc -->
       <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-            Virtualisation (VMware & VirtualBox)
+        <h2 class="accordion-header" id="headingParc">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseParc" aria-expanded="true" aria-controls="collapseParc">
+            Inventaire & gestion de parc (Cockpit / GLPI)
           </button>
         </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionPatrimoine">
+        <div id="collapseParc" class="accordion-collapse collapse show" data-bs-parent="#accordionPatrimoine">
           <div class="accordion-body">
-            Création de laboratoires virtuels avec <strong>VMware Workstation</strong> et <strong>VirtualBox</strong> pour simuler des infrastructures réseau. <br>
-            ➤ Installation de Windows Server 2019/2022 et de distributions Linux (Debian / Ubuntu) <br>
-            ➤ Gestion de snapshots, paramétrage réseau NAT/bridge, tests d’interconnexion et d’authentification. <br>
-            ➤ Utilisation dans le cadre de TP et de projets de déploiement simulé d’entreprise.
+            <p class="mb-2">
+              Dans le cadre de mon alternance, j’ai participé à la mise à jour et à la fiabilisation du
+              <strong>parc informatique</strong> de l’entreprise.
+            </p>
+            <ul class="mb-2">
+              <li>Installation et déploiement des agents <strong>Cockpit</strong> sur les postes utilisateurs.</li>
+              <li>Remontée automatique des informations (modèle, OS, RAM, numéro de série, utilisateur associé).</li>
+              <li>Rapprochement avec les données budgétaires pour préparer le <strong>budget IT 2026</strong>.</li>
+              <li>Utilisation de <strong>GLPI</strong> pour le suivi du matériel et des tickets d’incidents.</li>
+            </ul>
+            <p class="mb-0 text-muted small">
+              <strong>Objectif :</strong> disposer d’une vision fiable du patrimoine informatique (postes, écrans, équipements) pour
+              planifier les renouvellements et mieux gérer les incidents.
+            </p>
           </div>
         </div>
       </div>
 
-      <!-- GLPI -->
+      <!-- Projet 2 : Sauvegardes & continuité -->
       <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-            Gestion de parc informatique
+        <h2 class="accordion-header" id="headingSauvegarde">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSauvegarde" aria-expanded="false" aria-controls="collapseSauvegarde">
+            Stratégie de sauvegarde & continuité (Veeam)
           </button>
         </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionPatrimoine">
+        <div id="collapseSauvegarde" class="accordion-collapse collapse" data-bs-parent="#accordionPatrimoine">
           <div class="accordion-body">
-            Mise en place d’un suivi du <strong>matériel informatique</strong> dans le cadre de mes projets et de ma formation : <br>
-            ➤ Élaboration d’un inventaire numérique du parc informatique (postes, imprimantes, périphériques réseau) <br>
-            ➤ Identification des caractéristiques techniques (modèle, OS, RAM, numéro de série) <br>
-            ➤ Mise à jour manuelle après simulation d’installation ou de remplacement de matériel <br>
+            <p class="mb-2">
+              Pour garantir la disponibilité des données et des services, j’ai travaillé sur la mise en place et le suivi
+              d’une <strong>stratégie de sauvegarde</strong> avec Veeam.
+            </p>
+            <ul class="mb-2">
+              <li>Configuration de sauvegardes <strong>quotidiennes</strong> en local des serveurs et données critiques.</li>
+              <li>Mise en place de sauvegardes <strong>mensuelles</strong> sur un disque externe dédié.</li>
+              <li>Tests de restauration de fichiers et de volumes pour vérifier l’intégrité des sauvegardes.</li>
+              <li>Contrôle régulier des jobs de sauvegarde et analyse des alertes.</li>
+            </ul>
+            <p class="mb-0 text-muted small">
+              <strong>Objectif :</strong> assurer la continuité d’activité en cas d’incident (erreur humaine, panne matérielle,
+              corruption de données) et réduire le risque de perte de données.
+            </p>
           </div>
         </div>
       </div>
 
-      <!-- Sauvegarde et supervision -->
+      <!-- Projet 3 : Virtualisation & environnements de test -->
       <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
-            Sauvegarde & Supervision
+        <h2 class="accordion-header" id="headingVirtualisation">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVirtualisation" aria-expanded="false" aria-controls="collapseVirtualisation">
+            Virtualisation & laboratoires de test
           </button>
         </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionPatrimoine">
+        <div id="collapseVirtualisation" class="accordion-collapse collapse" data-bs-parent="#accordionPatrimoine">
           <div class="accordion-body">
-            Réalisation de scénarios de sauvegarde et supervision dans un environnement simulé : <br>
-            ➤ Création de script <strong>PowerShell</strong> pour copier automatiquement des dossiers ou faciliter les tâches sur Windows Server <br>
-            ➤ Tests de sauvegarde/restauration sur des machines virtuelles (fichiers critiques, images système) <br>
-            ➤ Introduction aux principes de supervision : ping, vérification d’état de services, suivi de l’utilisation du disque via des outils natifs (Task Manager, services.msc, événements Windows) <br>
-          </div>
-        </div>
-      </div>
-
-      <!-- Services Réseau -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingFour">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
-            Configuration de services réseau (AD, DNS, DHCP)
-          </button>
-        </h2>
-        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionPatrimoine">
-          <div class="accordion-body">
-            Installation et configuration de services essentiels à toute infrastructure : <br>
-            ➤ Création d’un domaine <strong>Active Directory</strong>, gestion des comptes utilisateurs et des GPO (stratégies de sécurité) <br>
-            ➤ Mise en place d’un serveur DNS interne et paramétrage d’un service DHCP dynamique <br>
-            ➤ Simulation d’une architecture d’entreprise : serveur DC, clients Windows, attribution automatique d’adresses IP.
+            <p class="mb-2">
+              Pour expérimenter et valider des configurations sans impacter la production, j’ai mis en place des
+              <strong>environnements virtualisés</strong>.
+            </p>
+            <ul class="mb-2">
+              <li>Création de laboratoires avec <strong>VirtualBox</strong> (serveurs, postes clients, réseau virtuel).</li>
+              <li>Installation de <strong>Windows Server 2022</strong> et de machines clientes Windows 10 / 11.</li>
+              <li>Tests de scripts PowerShell, de politiques de sécurité et de scénarios de sauvegarde.</li>
+              <li>Simulation de petites infrastructures d’entreprise pour m’entraîner avant les déploiements réels.</li>
+            </ul>
+            <p class="mb-0 text-muted small">
+              <strong>Objectif :</strong> disposer d’un environnement de test sûr pour monter en compétence et préparer les
+              interventions sur le SI de l’entreprise.
+            </p>
           </div>
         </div>
       </div>
