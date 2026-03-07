@@ -1,0 +1,133 @@
+/* --- Règle d'or : Fond Mousse Sombre & Séparation des Couches --- */
+
+/* Arrière-plan global transparent pour sublimer particles.js */
+body {
+  background-color: transparent !important;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  color: #f8f9fa !important;
+  /* Texte clair pour lisibilité optimale sur fond sombre */
+}
+
+/* Effet Particles.js */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+  background-color: #0b192c !important;
+  /* Bleu nuit */
+}
+
+/* Transparence intégrale des sections ET forçage des classes utilitaires Bootstrap */
+section,
+.bg-light,
+.bg-white,
+.bg-dark {
+  background-color: transparent !important;
+}
+
+/* Cacher le background dotted existant s'il était là */
+.dotted-glow-bg {
+  display: none !important;
+}
+
+/* Inversion des classes de texte Bootstrap pour forcer la lisibilité claire sur fond sombre */
+.text-dark {
+  color: #e9ecef !important;
+  /* Devient clair */
+}
+
+.text-muted {
+  color: #ced4da !important;
+  /* Gris plus clair */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.card-title {
+  color: #ffffff !important;
+}
+
+/* --- GLASSMORPHISM POUR LISIBILITÉ (Thème Sombre) --- */
+/* Pour garantir la lisibilité du texte sur l'animation, on applique un glassmorphism sombre aux conteneurs de texte */
+
+/* On vise tous les conteneurs principaux appartenant à des sections */
+section>.container {
+  background: rgba(30, 30, 30, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  /* Ombre plus forte pour détacher le bloc */
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Glassmorphism sur les Cartes */
+.card,
+.artifact-card {
+  background: rgba(40, 40, 40, 0.7) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  color: #ffffff !important;
+  /* Texte des cartes en blanc */
+}
+
+/* Préserver et adoucir l'effet hover */
+.card:hover,
+.artifact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+  background: rgba(50, 50, 50, 0.8) !important;
+}
+
+/* --- Exclusions Structurelles (Z-INDEX) --- */
+
+/* On s'assure que le header et footer restent 100% opaques et au premier plan */
+header#hero,
+header {
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Les headers de base ayant un bg-color inline (ex: #4a5568) seront conservés opaques si non-surclassés,
+   on laisse donc le footer et header respirer avec leur fond opaque pour bien cadrer la page. */
+footer {
+  position: relative;
+  z-index: 10;
+  background-color: #212529 !important;
+  /* bg-dark */
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.5);
+  /* Ligne subtile */
+}
+
+/* Bouton pilule arrondi (CV) */
+.cv-pill {
+  display: inline-block;
+  padding: .25rem .6rem;
+  border: 1px solid #fff;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/* Forcer la navbar à être en noir bg-dark */
+nav.navbar {
+  background-color: #212529 !important;
+}

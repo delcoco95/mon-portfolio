@@ -1,0 +1,85 @@
+    body {
+        scroll-behavior: smooth;
+    }
+
+    header {
+        background-color: #4a5568;
+    }
+
+    .nav-link.active {
+        font-weight: bold;
+        border-bottom: 2px solid #fff;
+    }
+
+    .icon-title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .section-icon {
+        font-size: 1.5rem;
+        color: #4a5568;
+    }
+
+    /* CARTES */
+    .skill-card {
+        position: relative;
+        height: 300px;
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease;
+    }
+
+    .skill-card:hover {
+        transform: translateY(-6px);
+    }
+
+    .skill-front,
+    .skill-back {
+        position: absolute;
+        inset: 0;
+        padding: 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    .skill-front {
+        background: #fff;
+    }
+
+    .skill-back {
+        background: #4a5568;
+        color: #fff;
+        opacity: 0;
+        transform: translateY(20px);
+        font-size: 0.9rem;
+    }
+
+    .skill-card:hover .skill-front {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    .skill-card:hover .skill-back {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .skill-icon {
+        font-size: 2.8rem;
+        color: #4a5568;
+        margin-bottom: 10px;
+    }
+
+    /* On s'assure que le header couvre la grille */
+    header {
+        position: relative;
+        z-index: 10;
+    }

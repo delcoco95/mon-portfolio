@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  AOS.init();
   const form = document.getElementById("contact-form");
 
   form.addEventListener("submit", async function (e) {

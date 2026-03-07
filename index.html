@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio de Nedj Belloum, futur administrateur réseau. Projets, compétences en virtualisation, supervision, sécurité et infrastructure IT.">
-  <meta name="keywords" content="Nedj Belloum, portfolio, BTS SIO, SISR, réseau, infrastructure, technicien informatique">
+  <meta name="description"
+    content="Portfolio de Nedj Belloum, futur administrateur réseau. Projets, compétences en virtualisation, supervision, sécurité et infrastructure IT.">
+  <meta name="keywords"
+    content="Nedj Belloum, portfolio, BTS SIO, SISR, réseau, infrastructure, technicien informatique">
   <meta name="author" content="Nedj Belloum">
   <title>Accueil - Portfolio Nedj Belloum</title>
   <!-- Bootstrap CSS -->
@@ -13,115 +16,67 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico">
-  <style>
-    body {
-      scroll-behavior: smooth;
-    }
-    header {
-      background: url('image_logo/fondpage\ dacceuil.jpg') no-repeat center center;
-      background-size: cover;
-      position: relative;
-    }
-    header::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.6); /* filtre sombre */
-      z-index: 1;
-    }
-    header .container {
-      position: relative;
-      z-index: 2;
-    }
-    #about {
-      scroll-margin-top: 50px;
-    }
-    .nav-link.active {
-      font-weight: bold;
-      border-bottom: 2px solid #fff;
-    }
-    .icon-title {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .section-icon {
-      font-size: 1.5rem;
-      color: #4a5568;
-    }
-    .card-hover {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .card-hover:hover {
-      transform: scale(1.02);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    }
-    .option-card {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .option-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    }
-    .cv-pill { display:inline-block; padding:.25rem .6rem; border:1px solid #222; border-radius:999px; font-weight:600; }
-  </style>
+  <link href="css/index.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100" tabindex="0">
+  <div id="particles-js"></div>
 
-<!-- Navbar -->
-<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="#">Nedjmeddine Belloum</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="#hero">Accueil</a></li>
-        <li class="nav-item"><a class="nav-link" href="projets.html">Projets</a></li>
-        <li class="nav-item"><a class="nav-link" href="entreprise.html">Entreprise</a></li>
-        <li class="nav-item"><a class="nav-link" href="competences.html">Compétences</a></li>
-        <li class="nav-item"><a class="nav-link" href="veille.html">Veille</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- Hero Section -->
-<header id="hero" class="vh-100 d-flex align-items-center text-center text-white">
-  <div class="container" data-aos="fade-up">
-    <h1 class="display-4">Bienvenue sur mon Portfolio</h1>
-    <p class="lead">Je suis Nedjmeddine Belloum, futur Administrateur en Infrastructure Réseaux</p>
-    <a href="#about" class="btn btn-light mt-4">Découvrir</a>
-  </div>
-</header>
-
-<!-- À propos -->
-<section id="about" class="py-5 bg-light">
-  <div class="container" data-aos="fade-up">
-    <div class="row align-items-center">
-      <div class="col-md-8">
-        <h2 class="mb-4">À propos de moi</h2>
-        <p>
-          4 ans d’expérience dans le domaine du transport et de la logistique. Autonome, organisé et doté d’un fort esprit d’équipe, je sais allier analyse, sens du service et
-          rigueur opérationnelle. Actuellement en administration des systèmes, des réseaux et en cybersécurité, je
-          me forme également à la sécurité cloud afin de renforcer mes compétences dans la protection des
-          environnements informatiques
-        </p>
-      </div>
-      <div class="col-md-4 text-md-end text-center mt-4 mt-md-0">
-        <a class="btn btn-primary" href="projets.html">Voir mes projets</a>
-        <a href="image_logo/CV_Nedj_Belloum.pdf" target="_blank" class="btn btn-dark">
-          <i class="bi bi-file-earmark-person-fill me-2"></i> Voir mon CV
-        </a>
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Nedjmeddine Belloum</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#hero">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="projets.html">Projets</a></li>
+          <li class="nav-item"><a class="nav-link" href="entreprise.html">Entreprise</a></li>
+          <li class="nav-item"><a class="nav-link" href="competences.html">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="veille.html">Veille</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
       </div>
     </div>
-  </div>
-</section>
+  </nav>
 
-<!-- Section Expériences Professionnelles -->
+  <!-- Hero Section -->
+  <header id="hero" class="vh-100 d-flex align-items-center text-center text-white">
+    <div class="container" data-aos="fade-up">
+      <h1 class="display-4">Bienvenue sur mon Portfolio</h1>
+      <p class="lead">Je suis Nedjmeddine Belloum, futur Administrateur en Infrastructure Réseaux</p>
+      <a href="#about" class="btn btn-light mt-4">Découvrir</a>
+    </div>
+  </header>
+
+  <!-- À propos -->
+  <section id="about" class="py-5 bg-transparent">
+    <div class="container" data-aos="fade-up">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <h2 class="mb-4">À propos de moi</h2>
+          <p>
+            4 ans d’expérience dans le domaine du transport et de la logistique. Autonome, organisé et doté d’un fort
+            esprit d’équipe, je sais allier analyse, sens du service et
+            rigueur opérationnelle. Actuellement en administration des systèmes, des réseaux et en cybersécurité, je
+            me forme également à la sécurité cloud afin de renforcer mes compétences dans la protection des
+            environnements informatiques
+          </p>
+        </div>
+        <div class="col-md-4 text-md-end text-center mt-4 mt-md-0">
+          <a class="btn btn-primary" href="projets.html">Voir mes projets</a>
+          <a href="image_logo/CV_Nedj_Belloum.pdf" target="_blank" class="btn btn-dark">
+            <i class="bi bi-file-earmark-person-fill me-2"></i> Voir mon CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Expériences Professionnelles -->
   <section class="pb-5 pt-5">
     <div class="container">
       <h2 class="mb-4 icon-title">
@@ -135,11 +90,13 @@
             <a href="https://www.ragni.com/" target="_blank" class="stretched-link" rel="noopener noreferrer"></a>
             <div class="card-body d-flex flex-column align-items-center justify-content-center">
               <div class="ratio ratio-1x1" style="width: 100px; margin-bottom: 10px;">
-                <img src="image_logo/groupe ragni.jpeg" alt="Logo Groupe Ragni" class="img-fluid" style="object-fit: contain;">
+                <img src="image_logo/groupe ragni.jpeg" alt="Logo Groupe Ragni" class="img-fluid"
+                  style="object-fit: contain;">
               </div>
               <h5 class="card-title">Technicien Support Informatique - Groupe Ragni</h5>
               <p class="card-text"><strong>Dates :</strong> Septembre 2025 - Septembre 2026</p>
-              <p class="card-text">Gestion des équipements informatiques, support technique, déploiement des infrastructures.</p>
+              <p class="card-text">Gestion des équipements informatiques, support technique, déploiement des
+                infrastructures.</p>
             </div>
           </div>
         </div>
@@ -147,16 +104,19 @@
         <!-- Resistex -->
         <div class="col-md-6">
           <div class="card text-center h-100 card-hover position-relative">
-            <a href="https://www.resistex-sa.com/fr/" target="_blank" class="stretched-link" rel="noopener noreferrer"></a>
+            <a href="https://www.resistex-sa.com/fr/" target="_blank" class="stretched-link"
+              rel="noopener noreferrer"></a>
             <div class="card-body d-flex flex-column align-items-center justify-content-center">
               <div style="width: 100px; height: 100px; margin-bottom: 10px;">
-                <img src="image_logo/logoresistex.png" alt="Logo Resistex" class="img-fluid" style="object-fit: contain; width: 100%; height: 100%;">
+                <img src="image_logo/logoresistex.png" alt="Logo Resistex" class="img-fluid"
+                  style="object-fit: contain; width: 100%; height: 100%;">
               </div>
               <h5 class="card-title">Assistant Administrateur Système et Réseau - Resistex</h5>
               <p class="card-text"><strong>Dates :</strong> Juillet 2025 - Août 2025 (Stage)</p>
               <p class="card-text">Supervision des réseaux, maintenance des systèmes, optimisation IT.</p>
               <div class="mt-2 position-relative z-1">
-                <a href="image_logo/Note de stage RESISTEX.pdf" target="_blank" class="btn btn-outline-primary btn-sm">Voir la note de synthèse</a>
+                <a href="image_logo/Note de stage RESISTEX.pdf" target="_blank"
+                  class="btn btn-outline-primary btn-sm">Voir la note de synthèse</a>
               </div>
             </div>
           </div>
@@ -183,11 +143,13 @@
             <a href="https://www.pickup.fr/" target="_blank" class="stretched-link" rel="noopener noreferrer"></a>
             <div class="card-body d-flex flex-column align-items-center justify-content-center">
               <div style="width: 100px; height: 100px; margin-bottom: 10px;">
-                <img src="image_logo/Logo_Pickup.svg.png" alt="Logo Pickup" class="img-fluid" style="object-fit: contain; width: 100%; height: 100%;">
+                <img src="image_logo/Logo_Pickup.svg.png" alt="Logo Pickup" class="img-fluid"
+                  style="object-fit: contain; width: 100%; height: 100%;">
               </div>
               <h5 class="card-title">Agent de support Dispatcher - Pickup</h5>
               <p class="card-text"><strong>Dates :</strong> 2021 - 2024 (CDI)</p>
-              <p class="card-text">Coordination des tournées, support technique, résolution des incidents logistiques.</p>
+              <p class="card-text">Coordination des tournées, support technique, résolution des incidents logistiques.
+              </p>
             </div>
           </div>
         </div>
@@ -197,55 +159,61 @@
   </section>
 
   <!-- Certifications -->
-<section id="certifications" class="py-5 bg-light">
-  <div class="container" data-aos="fade-up">
-    <h2 class="mb-4 icon-title"><i class="bi bi-award-fill section-icon"></i> Certifications</h2>
+  <section id="certifications" class="py-5 bg-transparent">
+    <div class="container" data-aos="fade-up">
+      <h2 class="mb-4 icon-title"><i class="bi bi-award-fill section-icon"></i> Certifications</h2>
 
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
 
-      <!-- Cisco -->
-      <div class="col">
-        <div class="card h-100 text-center card-hover position-relative">
-          <!-- Lien PDF (ouvre dans un nouvel onglet) -->
-          <a href="image_logo/Certification Cisco - Networking Basics - Nedj Belloum.pdf" target="_blank" rel="noopener" class="stretched-link" aria-label="Ouvrir le PDF Cisco - Introduction to Networks"></a>
-          <div class="card-body">
-            <img src="image_logo/cisco.png" alt="Cisco" class="img-fluid mb-3" style="max-height: 50px;">
-            <h5 class="card-title">Cisco – Introduction to Networks</h5>
-            <p class="card-text">Initiation aux réseaux, adressage IP, modèle OSI, routage et commutation.</p>
+        <!-- Cisco -->
+        <div class="col">
+          <div class="card h-100 text-center card-hover position-relative">
+            <!-- Lien PDF (ouvre dans un nouvel onglet) -->
+            <a href="image_logo/Certification Cisco - Networking Basics - Nedj Belloum.pdf" target="_blank"
+              rel="noopener" class="stretched-link" aria-label="Ouvrir le PDF Cisco - Introduction to Networks"></a>
+            <div class="card-body">
+              <img src="image_logo/cisco.png" alt="Cisco" class="img-fluid mb-3" style="max-height: 50px;">
+              <h5 class="card-title">Cisco – Introduction to Networks</h5>
+              <p class="card-text">Initiation aux réseaux, adressage IP, modèle OSI, routage et commutation.</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- ANSSI -->
-      <div class="col">
-        <div class="card h-100 text-center card-hover position-relative">
-          <a href="image_logo/Attestation_SecNumacademie_ANSSI - Nedj Belloum.pdf" target="_blank" rel="noopener" class="stretched-link" aria-label="Ouvrir le PDF ANSSI - Sensibilisation à la cybersécurité"></a>
-          <div class="card-body">
-            <img src="image_logo/Logo ANSSI.webp" alt="ANSSI" class="img-fluid mb-3" style="max-height: 50px;">
-            <h5 class="card-title">ANSSI – Sensibilisation à la cybersécurité</h5>
-            <p class="card-text">Bonnes pratiques, sécurité des mots de passe, risques numériques, RGPD.</p>
+        <!-- ANSSI -->
+        <div class="col">
+          <div class="card h-100 text-center card-hover position-relative">
+            <a href="image_logo/Attestation_SecNumacademie_ANSSI - Nedj Belloum.pdf" target="_blank" rel="noopener"
+              class="stretched-link" aria-label="Ouvrir le PDF ANSSI - Sensibilisation à la cybersécurité"></a>
+            <div class="card-body">
+              <img src="image_logo/Logo_ANSSI-removebg-preview.png" alt="ANSSI" class="img-fluid mb-3"
+                style="max-height: 50px;">
+              <h5 class="card-title">ANSSI – Sensibilisation à la cybersécurité</h5>
+              <p class="card-text">Bonnes pratiques, sécurité des mots de passe, risques numériques, RGPD.</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Fortinet -->
-      <div class="col">
-        <div class="card h-100 text-center card-hover position-relative">
-          <a href="image_logo/Certificat Fortinet Fundamentals in Cybersecurity - NSE 1-2.pdf" target="_blank" rel="noopener" class="stretched-link" aria-label="Ouvrir le PDF Fortinet NSE 1/2"></a>
-          <div class="card-body">
-            <img src="image_logo/Fortinet-logo-rgb-black-red.svg" alt="Fortinet" class="img-fluid mb-3" style="max-height: 50px;">
-            <h5 class="card-title">Fortinet – NSE 1/2</h5>
-            <p class="card-text">Reconnaître les attaques (phishing, ransomware, etc.) et comprendre les politiques d’accès.</p>
+        <!-- Fortinet -->
+        <div class="col">
+          <div class="card h-100 text-center card-hover position-relative">
+            <a href="image_logo/Certificat Fortinet Fundamentals in Cybersecurity - NSE 1-2.pdf" target="_blank"
+              rel="noopener" class="stretched-link" aria-label="Ouvrir le PDF Fortinet NSE 1/2"></a>
+            <div class="card-body">
+              <img src="image_logo/Fortinet-logo-rgb-black-red.svg" alt="Fortinet" class="img-fluid mb-3"
+                style="max-height: 50px;">
+              <h5 class="card-title">Fortinet – NSE 1/2</h5>
+              <p class="card-text">Reconnaître les attaques (phishing, ransomware, etc.) et comprendre les politiques
+                d’accès.</p>
+            </div>
           </div>
         </div>
-      </div>
 
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- BTS SIO 
+  <!-- BTS SIO 
 <section id="bts" class="py-5">
   <div class="container" data-aos="fade-up">
     <h2 class="mb-4">Le BTS SIO</h2>
@@ -292,30 +260,31 @@
   </div>
 </section> -->
 
-   <!-- Footer -->
-<footer class="bg-dark text-white text-center py-3">
-  <p class="mb-0 d-flex justify-content-center align-items-center gap-3 flex-wrap">
-    © 2025 Nedj Belloum. Tous droits réservés. 
-    <a href="mentions-legales.html" class="text-white-50">Mentions légales</a> |
-    <a href="plan-site.html" class="text-white-50">Plan du site</a> |
-    <a href="confidentialite.html" class="text-white-50">Politique de confidentialité</a> |
-    <a href="https://www.linkedin.com/in/nedj-b-002558194/" target="_blank" rel="noopener noreferrer">
-      <img src="image_logo/linkedin.svg" alt="LinkedIn" style="width: 24px; height: 24px;">
-    </a>
-    <a href="https://github.com/delcoco95" target="_blank" rel="noopener noreferrer">
-      <img src="image_logo/github.svg" alt="GitHub" style="width: 24px; height: 24px;">
-    </a>
-    <a href="image_logo/CV_Nedj_Belloum.pdf" target="_blank" rel="noopener" aria-label="CV (PDF)">
-      <span class="cv-pill">CV</span>
-    </a>
-  </p>
-</footer>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0 d-flex justify-content-center align-items-center gap-3 flex-wrap">
+      © 2025 Nedj Belloum. Tous droits réservés.
+      <a href="mentions-legales.html" class="text-white-50">Mentions légales</a> |
+      <a href="plan-site.html" class="text-white-50">Plan du site</a> |
+      <a href="confidentialite.html" class="text-white-50">Politique de confidentialité</a> |
+      <a href="https://www.linkedin.com/in/nedj-b-002558194/" target="_blank" rel="noopener noreferrer">
+        <img src="image_logo/linkedin.svg" alt="LinkedIn" style="width: 24px; height: 24px;">
+      </a>
+      <a href="https://github.com/delcoco95" target="_blank" rel="noopener noreferrer">
+        <img src="image_logo/github.svg" alt="GitHub" style="width: 24px; height: 24px;">
+      </a>
+      <a href="image_logo/CV_Nedj_Belloum.pdf" target="_blank" rel="noopener" aria-label="CV (PDF)">
+        <span class="cv-pill">CV</span>
+      </a>
+    </p>
+  </footer>
 
-<!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="js/particles-setup.js"></script>
 </body>
+
 </html>

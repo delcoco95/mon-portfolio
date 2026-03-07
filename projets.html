@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,33 +11,14 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-  <style>
-    body {
-      scroll-behavior: smooth;
-    }
-    header {
-      background-color: #4a5568;
-    }
-    .nav-link.active {
-      font-weight: bold;
-      border-bottom: 2px solid #fff;
-    }
-    .section-icon {
-      font-size: 1.5rem;
-      color: #4a5568;
-    }
-    .card-hover {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .card-hover:hover {
-      transform: scale(1.02);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    }
-     .cv-pill { display:inline-block; padding:.25rem .6rem; border:1px solid #222; border-radius:999px; font-weight:600; }
-
-  </style>
+  <link href="css/projets.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
+  <div id="particles-js"></div>
+
+
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -59,160 +41,189 @@
   </nav>
 
   <!-- Header -->
-  <header class="py-5 text-white text-center" style="margin-top: 56px;">
+  <section class="py-5 mt-5 text-white text-center">
     <div class="container">
       <h1 class="display-5">Projets Réalisés</h1>
       <p class="lead">Parcourez mes réalisations issues de formations et projets professionnels en informatique.</p>
     </div>
-  </header>
+  </section>
 
- <section class="py-5 bg-light">
-  <div class="container">
-    <h2 class="mb-4 icon-title" data-aos="fade-up">
-      <i class="bi bi-code-slash section-icon"></i> Projets Systèmes et Réseaux
-    </h2>
-    <p class="mb-5 text-muted" data-aos="fade-up">
-      Dans le cadre de mes études en BTS SIO option SISR, j’ai réalisé plusieurs projets réseaux 
-      mettant en œuvre des environnements Windows et Linux. Ces projets m’ont permis de travailler 
-      sur la virtualisation, la gestion des identités, l’automatisation via scripts, ainsi que la mise 
-      en place de services réseau sécurisés. 
-      <br><strong>Outils utilisés :</strong> VirtualBox, Hyper-V, Windows Server 2022, Debian, PowerShell, Docker, Python3.
-    </p>
+  <section class="py-5 bg-transparent">
+    <div class="container">
+      <h2 class="mb-4 icon-title" data-aos="fade-up">
+        <i class="bi bi-code-slash section-icon"></i> Projets Systèmes et Réseaux
+      </h2>
+      <p class="mb-5 text-muted" data-aos="fade-up">
+        Dans le cadre de mes études en BTS SIO option SISR, j’ai réalisé plusieurs projets réseaux
+        mettant en œuvre des environnements Windows et Linux. Ces projets m’ont permis de travailler
+        sur la virtualisation, la gestion des identités, l’automatisation via scripts, ainsi que la mise
+        en place de services réseau sécurisés.
+        <br><strong>Outils utilisés :</strong> VirtualBox, Hyper-V, Windows Server 2022, Debian, PowerShell, Docker,
+        Python3.
+      </p>
 
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
 
-      <div class="col" data-aos="fade-up">
-        <div class="card shadow-sm h-100 card-hover" style="cursor: pointer;">
-          <a href="https://github.com/delcoco95/AD-Windows-Server" target="_blank" class="text-decoration-none text-dark">
-            <img src="image_logo/ADcapture.png" class="card-img-top" alt="Aperçu Active Directory">
-            <div class="card-body">
-              <h5 class="card-title">Active Directory</h5>
-              <p class="card-text">Centralisation des identités et droits d’accès sur un réseau local simulé.</p>
-              <p class="text-muted">⏱️ 1 jour – Technologies : Windows Server 2022, GPO, VirtualBox </p>
-            </div>
-          </a>
-          <div class="card-body pt-0">
-            <div class="d-flex gap-2 flex-wrap">
-              <button class="btn btn-outline-primary flex-fill" onclick="event.stopPropagation(); window.open('tableau-RP/AD - Epreuve E5 - BTS SIO.pdf', '_blank')">Tableau RP</button>
-              <button class="btn btn-outline-secondary flex-fill" onclick="event.stopPropagation(); window.open('https://github.com/delcoco95/AD-Windows-Server', '_blank')">Documentation</button>
+        <div class="col" data-aos="fade-up">
+          <div class="card shadow-sm h-100 card-hover" style="cursor: pointer;">
+            <a href="https://github.com/delcoco95/AD-Windows-Server" target="_blank"
+              class="text-decoration-none text-white">
+              <img src="image_logo/ADcapture.png" class="card-img-top" alt="Aperçu Active Directory">
+              <div class="card-body">
+                <h5 class="card-title">Active Directory</h5>
+                <p class="card-text">Centralisation des identités et droits d’accès sur un réseau local simulé.</p>
+                <p class="text-muted">⏱️ 1 jour – Technologies : Windows Server 2022, GPO, VirtualBox </p>
+              </div>
+            </a>
+            <div class="card-body pt-0">
+              <div class="d-flex gap-2 flex-wrap">
+                <button class="btn btn-outline-primary flex-fill"
+                  onclick="event.stopPropagation(); window.open('tableau-RP/AD - Epreuve E5 - BTS SIO.pdf', '_blank')">Tableau
+                  RP</button>
+                <button class="btn btn-outline-secondary flex-fill"
+                  onclick="event.stopPropagation(); window.open('https://github.com/delcoco95/AD-Windows-Server', '_blank')">Documentation</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="col" data-aos="fade-up">
-        <div class="card shadow-sm h-100 card-hover" style="cursor: pointer;">
-          <a href="https://github.com/Mediaschool-BTS-SISR-2025/Nedj_PS_1" target="_blank" class="text-decoration-none text-dark">
-            <img src="image_logo/menupowercapture.png" class="card-img-top" alt="Menu PowerShell">
-            <div class="card-body">
-              <h5 class="card-title">Windows Server 2022</h5>
-              <p class="card-text">Installation automatisée d’un serveur 2022 via interface CLI en PowerShell.</p>
-              <p class="text-muted">⏱️ 22 jours – Technologies : PowerShell, Windows Server, AD, DHCP, DNS</p>
-            </div>
-          </a>
-          <div class="card-body pt-0">
-            <div class="d-flex gap-2 flex-wrap">
-              <button class="btn btn-outline-primary flex-fill" onclick="event.stopPropagation(); window.open('tableau-RP/PowerShell - Epreuve E5 - BTS SIO.pdf', '_blank')">Tableau RP</button>
-              <button class="btn btn-outline-secondary flex-fill" onclick="event.stopPropagation(); window.open('https://github.com/Mediaschool-BTS-SISR-2025/Nedj_PS_1', '_blank')">Documentation</button>
+        <div class="col" data-aos="fade-up">
+          <div class="card shadow-sm h-100 card-hover" style="cursor: pointer;">
+            <a href="https://github.com/Mediaschool-BTS-SISR-2025/Nedj_PS_1" target="_blank"
+              class="text-decoration-none text-white">
+              <img src="image_logo/menupowercapture.png" class="card-img-top" alt="Menu PowerShell">
+              <div class="card-body">
+                <h5 class="card-title">Windows Server 2022</h5>
+                <p class="card-text">Installation automatisée d’un serveur 2022 via interface CLI en PowerShell.</p>
+                <p class="text-muted">⏱️ 22 jours – Technologies : PowerShell, Windows Server, AD, DHCP, DNS</p>
+              </div>
+            </a>
+            <div class="card-body pt-0">
+              <div class="d-flex gap-2 flex-wrap">
+                <button class="btn btn-outline-primary flex-fill"
+                  onclick="event.stopPropagation(); window.open('tableau-RP/PowerShell - Epreuve E5 - BTS SIO.pdf', '_blank')">Tableau
+                  RP</button>
+                <button class="btn btn-outline-secondary flex-fill"
+                  onclick="event.stopPropagation(); window.open('https://github.com/Mediaschool-BTS-SISR-2025/Nedj_PS_1', '_blank')">Documentation</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="col" data-aos="fade-up">
-        <div class="card shadow-sm h-100 card-hover" style="cursor: pointer;">
-          <a href="https://github.com/delcoco95/Classcord-Project" target="_blank" class="text-decoration-none text-dark">
-            <img src="image_logo/Capture d’écran classcord.png" class="card-img-top" alt="Aperçu Classcord">
-            <div class="card-body">
-              <h5 class="card-title">Projet Réseau - ClassCord</h5>
-              <p class="card-text">Mise en place et personnalisation d’un service de tchat multi-clients.</p>
-              <p class="text-muted">⏱️ 8 jours – Technologies : VirtualBox, Debian, Python3, Docker</p>
-            </div>
-          </a>
-          <div class="card-body pt-0">
-            <div class="d-flex gap-2 flex-wrap">
-              <button class="btn btn-outline-primary flex-fill" onclick="event.stopPropagation(); window.open('tableau-RP/ClassCord - Epreuve E5 - BTS SIO.pdf', '_blank')">Tableau RP</button>
-              <button class="btn btn-outline-secondary flex-fill" onclick="event.stopPropagation(); window.open('https://github.com/delcoco95/Classcord-Project', '_blank')">Documentation</button>
+        <div class="col" data-aos="fade-up">
+          <div class="card shadow-sm h-100 card-hover" style="cursor: pointer;">
+            <a href="https://github.com/delcoco95/Classcord-Project" target="_blank"
+              class="text-decoration-none text-white">
+              <img src="image_logo/Capture d’écran classcord.png" class="card-img-top" alt="Aperçu Classcord">
+              <div class="card-body">
+                <h5 class="card-title">Projet Réseau - ClassCord</h5>
+                <p class="card-text">Mise en place et personnalisation d’un service de tchat multi-clients.</p>
+                <p class="text-muted">⏱️ 8 jours – Technologies : VirtualBox, Debian, Python3, Docker</p>
+              </div>
+            </a>
+            <div class="card-body pt-0">
+              <div class="d-flex gap-2 flex-wrap">
+                <button class="btn btn-outline-primary flex-fill"
+                  onclick="event.stopPropagation(); window.open('tableau-RP/ClassCord - Epreuve E5 - BTS SIO.pdf', '_blank')">Tableau
+                  RP</button>
+                <button class="btn btn-outline-secondary flex-fill"
+                  onclick="event.stopPropagation(); window.open('https://github.com/delcoco95/Classcord-Project', '_blank')">Documentation</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="col" data-aos="fade-up">
-        <div class="card shadow-sm h-100 card-hover" style="cursor: pointer;">
-          <a href="https://github.com/delcoco95/RP-Supervision-Infra" target="_blank" class="text-decoration-none text-dark">
-            <img src="image_logo/Capture d'écran 2025-11-11 072315.png" class="card-img-top" alt="Monitoring Infra">
-            <div class="card-body">
-              <h5 class="card-title">Supervision Infrastructure</h5>
-              <p class="card-text">Mise en place d'une supervision complète avec Prometheus, Node Exporter, Alertmanager et Grafana.</p>
-              <p class="text-muted">⏱️ 2 jours – Technologies : Linux Debian, Prometheus, Grafana</p>
-            </div>
-          </a>
-          <div class="card-body pt-0">
-            <div class="d-flex gap-2 flex-wrap">
-              <button class="btn btn-outline-primary flex-fill" onclick="event.stopPropagation(); window.open('tableau-RP/Supervision - Epreuve E5 - BTS SIO.pdf', '_blank')">Tableau RP</button>
-              <button class="btn btn-outline-secondary flex-fill" onclick="event.stopPropagation(); window.open('https://github.com/delcoco95/RP-Supervision-Infra', '_blank')">Documentation</button>
+        <div class="col" data-aos="fade-up">
+          <div class="card shadow-sm h-100 card-hover" style="cursor: pointer;">
+            <a href="https://github.com/delcoco95/RP-Supervision-Infra" target="_blank"
+              class="text-decoration-none text-white">
+              <img src="image_logo/Capture d'écran 2025-11-11 072315.png" class="card-img-top" alt="Monitoring Infra">
+              <div class="card-body">
+                <h5 class="card-title">Supervision Infrastructure</h5>
+                <p class="card-text">Mise en place d'une supervision complète avec Prometheus, Node Exporter,
+                  Alertmanager et Grafana.</p>
+                <p class="text-muted">⏱️ 2 jours – Technologies : Linux Debian, Prometheus, Grafana</p>
+              </div>
+            </a>
+            <div class="card-body pt-0">
+              <div class="d-flex gap-2 flex-wrap">
+                <button class="btn btn-outline-primary flex-fill"
+                  onclick="event.stopPropagation(); window.open('tableau-RP/Supervision - Epreuve E5 - BTS SIO.pdf', '_blank')">Tableau
+                  RP</button>
+                <button class="btn btn-outline-secondary flex-fill"
+                  onclick="event.stopPropagation(); window.open('https://github.com/delcoco95/RP-Supervision-Infra', '_blank')">Documentation</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="col" data-aos="fade-up">
-        <div class="card shadow-sm h-100 card-hover" style="cursor: pointer;">
-          <a href="https://github.com/delcoco95/GLPI/blob/main/README.md" target="_blank" class="text-decoration-none text-dark">
-            <img src="image_logo/Capture d'écran 2025-11-09 130029.png" class="card-img-top" alt="GLPI">
-            <div class="card-body">
-              <h5 class="card-title">GLPI</h5>
-              <p class="card-text">Installation d'un serveur GLPI sur Debian et configuration de l'Agent sur poste client.</p>
-              <p class="text-muted">⏱️ 4 jours – Technologies : Linux Debian, VirtualBox, Agent GLPI</p>
-            </div>
-          </a>
-          <div class="card-body pt-0">
-            <div class="d-flex gap-2 flex-wrap">
-              <button class="btn btn-outline-primary flex-fill" onclick="event.stopPropagation(); window.open('tableau-RP/GLPI - Epreuve E5 - BTS SIO.pdf', '_blank')">Tableau RP</button>
-              <button class="btn btn-outline-secondary flex-fill" onclick="event.stopPropagation(); window.open('https://github.com/delcoco95/GLPI/blob/main/README.md', '_blank')">Documentation</button>
+        <div class="col" data-aos="fade-up">
+          <div class="card shadow-sm h-100 card-hover" style="cursor: pointer;">
+            <a href="https://github.com/delcoco95/GLPI/blob/main/README.md" target="_blank"
+              class="text-decoration-none text-white">
+              <img src="image_logo/Capture d'écran 2025-11-09 130029.png" class="card-img-top" alt="GLPI">
+              <div class="card-body">
+                <h5 class="card-title">GLPI</h5>
+                <p class="card-text">Installation d'un serveur GLPI sur Debian et configuration de l'Agent sur poste
+                  client.</p>
+                <p class="text-muted">⏱️ 4 jours – Technologies : Linux Debian, VirtualBox, Agent GLPI</p>
+              </div>
+            </a>
+            <div class="card-body pt-0">
+              <div class="d-flex gap-2 flex-wrap">
+                <button class="btn btn-outline-primary flex-fill"
+                  onclick="event.stopPropagation(); window.open('tableau-RP/GLPI - Epreuve E5 - BTS SIO.pdf', '_blank')">Tableau
+                  RP</button>
+                <button class="btn btn-outline-secondary flex-fill"
+                  onclick="event.stopPropagation(); window.open('https://github.com/delcoco95/GLPI/blob/main/README.md', '_blank')">Documentation</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="col" data-aos="fade-up">
-        <div class="card shadow-sm h-100 card-hover" style="cursor: pointer;">
-          <a href="https://github.com/delcoco95/Securite_Serveur_Mediaschool" target="_blank" class="text-decoration-none text-dark">
-            <img src="image_logo/serveurmedias.png" class="card-img-top" alt="Serveur Mediaschool">
-            <div class="card-body">
-              <h5 class="card-title">Sécurité Serveur Mediaschool</h5>
-              <p class="card-text">Gestion de la sécurité d'un serveur pédagogique pour l'école IRIS.</p>
-              <p class="text-muted">⏱️ 15 jours – Technologies : Ubuntu, Wireguard, LDAP, Docker</p>
-            </div>
-          </a>
-          <div class="card-body pt-0">
-            <div class="d-flex gap-2 flex-wrap">
-              <button class="btn btn-outline-primary flex-fill" onclick="event.stopPropagation(); window.open('tableau-RP/Serveur_Mediaschool - Epreuve E5 - BTS SIO.pdf', '_blank')">Tableau RP</button>
-              <button class="btn btn-outline-secondary flex-fill" onclick="event.stopPropagation(); window.open('https://github.com/delcoco95/Securite_Serveur_Mediaschool', '_blank')">Documentation</button>
+        <div class="col" data-aos="fade-up">
+          <div class="card shadow-sm h-100 card-hover" style="cursor: pointer;">
+            <a href="https://github.com/delcoco95/Securite_Serveur_Mediaschool" target="_blank"
+              class="text-decoration-none text-white">
+              <img src="image_logo/serveurmedias.png" class="card-img-top" alt="Serveur Mediaschool">
+              <div class="card-body">
+                <h5 class="card-title">Sécurité Serveur Mediaschool</h5>
+                <p class="card-text">Gestion de la sécurité d'un serveur pédagogique pour l'école IRIS.</p>
+                <p class="text-muted">⏱️ 15 jours – Technologies : Ubuntu, Wireguard, LDAP, Docker</p>
+              </div>
+            </a>
+            <div class="card-body pt-0">
+              <div class="d-flex gap-2 flex-wrap">
+                <button class="btn btn-outline-primary flex-fill"
+                  onclick="event.stopPropagation(); window.open('tableau-RP/Serveur_Mediaschool - Epreuve E5 - BTS SIO.pdf', '_blank')">Tableau
+                  RP</button>
+                <button class="btn btn-outline-secondary flex-fill"
+                  onclick="event.stopPropagation(); window.open('https://github.com/delcoco95/Securite_Serveur_Mediaschool', '_blank')">Documentation</button>
+              </div>
             </div>
           </div>
         </div>
+
+      </div>
+      <div class="text-center mt-5" data-aos="fade-up">
+        <a href="entreprise.html" class="btn btn-dark btn-lg">
+          <i class="bi bi-building me-2"></i> Voir mes projets en entreprise
+        </a>
       </div>
 
-    </div> <div class="text-center mt-5" data-aos="fade-up">
-      <a href="entreprise.html" class="btn btn-dark btn-lg">
-        <i class="bi bi-building me-2"></i> Voir mes projets en entreprise
-      </a>
     </div>
-
-  </div> </section>
+  </section>
 
 
   <!-- Section Projets Web -->
-    <section class="py-5 bg-light">
+  <section class="py-5 bg-transparent">
     <div class="container">
       <h2 class="mb-4 icon-title" data-aos="fade-up">
         <i class="bi bi-code-slash section-icon"></i> Projets Web
       </h2>
       <p class="mb-5 text-muted" data-aos="fade-up">
-        Les projets web m’ont permis d’explorer la conception d’applications dynamiques côté front et back. 
-        J’ai utilisé des frameworks modernes pour développer des solutions interactives et performantes. 
+        Les projets web m’ont permis d’explorer la conception d’applications dynamiques côté front et back.
+        J’ai utilisé des frameworks modernes pour développer des solutions interactives et performantes.
         <br><strong>Outils utilisés :</strong> HTML5, CSS3, JavaScript, React, Node.js, Express, MongoDB, Bootstrap.
       </p>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
@@ -221,68 +232,81 @@
         <div class="col-md-6" data-aos="fade-up">
           <div class="card shadow-sm h-100 card-hover" style="cursor: pointer;">
             <!-- Lien principal de la carte -->
-            <a href="https://walo2428.github.io/Cine_pro/index.html" target="_blank" class="text-decoration-none text-dark">
+            <a href="https://walo2428.github.io/Cine_pro/index.html" target="_blank"
+              class="text-decoration-none text-white">
               <img src="image_logo/cinezonecapture.png" class="card-img-top" alt="Aperçu Cinezone">
               <div class="card-body">
                 <h5 class="card-title">Projet Web - Cinezone</h5>
-                <p class="card-text">Portail de gestion cinématographique local avec hébergement Apache et configuration sécurisée.</p>
+                <p class="card-text">Portail de gestion cinématographique local avec hébergement Apache et configuration
+                  sécurisée.</p>
                 <p class="text-muted">⏱️ 43 jours – Technologies : API TMDB, Apache, Debian</p>
               </div>
             </a>
             <!-- Boutons secondaires (PDF + GitHub) -->
-             <div class="card-body pt-0">
-            <div class="d-flex gap-2 flex-wrap">
-              <button class="btn btn-outline-primary flex-fill" onclick="event.stopPropagation(); window.open('tableau-RP/Cinezone - Epreuve E5 - BTS SIO.pdf', '_blank')">Tableau RP</button>
-              <button class="btn btn-outline-secondary flex-fill" onclick="event.stopPropagation(); window.open('https://github.com/walo2428/Cine_pro', '_blank')">Documentation</button>
+            <div class="card-body pt-0">
+              <div class="d-flex gap-2 flex-wrap">
+                <button class="btn btn-outline-primary flex-fill"
+                  onclick="event.stopPropagation(); window.open('tableau-RP/Cinezone - Epreuve E5 - BTS SIO.pdf', '_blank')">Tableau
+                  RP</button>
+                <button class="btn btn-outline-secondary flex-fill"
+                  onclick="event.stopPropagation(); window.open('https://github.com/walo2428/Cine_pro', '_blank')">Documentation</button>
+              </div>
             </div>
-          </div>
           </div>
         </div>
 
         <!-- BookAuto -->
         <div class="col-md-6" data-aos="fade-up">
           <div class="card shadow-sm h-100 card-hover" style="cursor: pointer;">
-            <a href="https://effervescent-daifuku-eaac3d.netlify.app/" target="_blank" class="text-decoration-none text-dark">
+            <a href="https://effervescent-daifuku-eaac3d.netlify.app/" target="_blank"
+              class="text-decoration-none text-white">
               <img src="image_logo/Capture d'écran 2025-11-09 115828.png" class="card-img-top" alt="Aperçu BookAuto">
               <div class="card-body">
                 <h5 class="card-title">Projet Web - BookAuto</h5>
-                <p class="card-text">Plateforme de mise en relation professionnel et clients avec agenda et carte geographie intégré.</p>
+                <p class="card-text">Plateforme de mise en relation professionnel et clients avec agenda et carte
+                  geographie intégré.</p>
                 <p class="text-muted">⏱️ En cours – Technologies : MongoDB, Docker, Node JS</p>
               </div>
             </a>
             <div class="card-body pt-0">
               <div class="d-flex gap-2 flex-wrap">
-                <button class="btn btn-outline-primary flex-fill" onclick="event.stopPropagation(); window.open('tableau-RP/BookAuto - Epreuve E5 - BTS SIO.pdf', '_blank')">Tableau RP</button>
-                <button class="btn btn-outline-secondary flex-fill" onclick="event.stopPropagation(); window.open('https://github.com/delcoco95/bookauto_/tree/main#readme', '_blank')">Documentation</button>
+                <button class="btn btn-outline-primary flex-fill"
+                  onclick="event.stopPropagation(); window.open('tableau-RP/BookAuto - Epreuve E5 - BTS SIO.pdf', '_blank')">Tableau
+                  RP</button>
+                <button class="btn btn-outline-secondary flex-fill"
+                  onclick="event.stopPropagation(); window.open('https://github.com/delcoco95/bookauto_/tree/main#readme', '_blank')">Documentation</button>
               </div>
             </div>
           </div>
         </div>
 
-    </section>
+  </section>
 
   <!-- Footer -->
-<footer class="bg-dark text-white text-center py-3">
-  <p class="mb-0 d-flex justify-content-center align-items-center gap-3 flex-wrap">
-    © 2025 Nedj Belloum. Tous droits réservés. 
-    <a href="mentions-legales.html" class="text-white-50">Mentions légales</a> |
-    <a href="plan-site.html" class="text-white-50">Plan du site</a> |
-    <a href="confidentialite.html" class="text-white-50">Politique de confidentialité</a> |
-    <a href="https://www.linkedin.com/in/nedj-b-002558194/" target="_blank" rel="noopener noreferrer">
-      <img src="image_logo/linkedin.svg" alt="LinkedIn" style="width: 24px; height: 24px;">
-    </a>
-    <a href="https://github.com/delcoco95" target="_blank" rel="noopener noreferrer">
-      <img src="image_logo/github.svg" alt="GitHub" style="width: 24px; height: 24px;">
-    </a>
-    <a href="image_logo/CV_Nedj_Belloum.pdf" target="_blank" rel="noopener" aria-label="CV (PDF)">
-      <span class="cv-pill">CV</span>
-    </a>
-  </p>
-</footer>
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0 d-flex justify-content-center align-items-center gap-3 flex-wrap">
+      © 2025 Nedj Belloum. Tous droits réservés.
+      <a href="mentions-legales.html" class="text-white-50">Mentions légales</a> |
+      <a href="plan-site.html" class="text-white-50">Plan du site</a> |
+      <a href="confidentialite.html" class="text-white-50">Politique de confidentialité</a> |
+      <a href="https://www.linkedin.com/in/nedj-b-002558194/" target="_blank" rel="noopener noreferrer">
+        <img src="image_logo/linkedin.svg" alt="LinkedIn" style="width: 24px; height: 24px;">
+      </a>
+      <a href="https://github.com/delcoco95" target="_blank" rel="noopener noreferrer">
+        <img src="image_logo/github.svg" alt="GitHub" style="width: 24px; height: 24px;">
+      </a>
+      <a href="image_logo/CV_Nedj_Belloum.pdf" target="_blank" rel="noopener" aria-label="CV (PDF)">
+        <span class="cv-pill">CV</span>
+      </a>
+    </p>
+  </footer>
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
+  <script src="js/projets.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="js/particles-setup.js"></script>
 </body>
+
 </html>

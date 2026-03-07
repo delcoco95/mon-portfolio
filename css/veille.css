@@ -1,0 +1,51 @@
+/* --- Veille Cards & Offcanvas --- */
+
+.artifact-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.artifact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    border-color: #0d6efd;
+}
+
+.artifact-card h5 {
+    margin: 0;
+    font-weight: 600;
+    color: #212529;
+}
+
+/* Personnalisation du Offcanvas (SideDrawer) */
+.offcanvas-veille {
+    width: 400px !important;
+    max-width: 100vw;
+    border-left: none;
+    box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15);
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+}
+
+.offcanvas-body {
+    padding: 2rem;
+}
+
+.tool-detail-icon {
+    font-size: 3rem;
+    color: #0d6efd;
+    margin-bottom: 1rem;
+}
