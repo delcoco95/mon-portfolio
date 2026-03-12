@@ -131,3 +131,36 @@ footer {
 nav.navbar {
   background-color: #212529 !important;
 }
+
+/* ========== FLUIDITÉ GLOBALE ========== */
+
+/* Transitions douces sur tous les liens et boutons */
+a, button, .btn, .card, .nav-link {
+  transition: all 0.25s ease;
+}
+
+/* Scroll fluide global */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hover sur les cartes — élévation douce */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Transition sur les images */
+img {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Apparition douce de la navbar au scroll */
+.navbar {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ajout d'ombre navbar au scroll — activer via JS */
+.navbar.scrolled {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
