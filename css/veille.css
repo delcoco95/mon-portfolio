@@ -1,95 +1,143 @@
-/* veille.css — Styles dédiés à la page Veille Technologique
-   Extrait du bloc <style> inline de veille.html
- */
+/* veille.css — Styles dédiés à la page Veille Technologique */
 
-    body {
-      scroll-behavior: smooth;
-    }
+body {
+  scroll-behavior: smooth;
+}
 
-    /* Couleur personnalisée du header */
-    header {
-      background-color: #4a5568;
-    }
+header {
+  background-color: #4a5568;
+}
 
-    /* Soulignement blanc sur l'onglet actif */
-    .nav-link.active {
-      font-weight: bold;
-      border-bottom: 2px solid #fff;
-    }
+.nav-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid #fff;
+}
 
-    /* Alignement des titres avec icônes */
-    .icon-title {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
+.icon-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
-    .section-icon {
-      font-size: 1.5rem;
-      color: #4a5568;
-    }
+.section-icon {
+  font-size: 1.5rem;
+  color: #4a5568;
+}
 
-    /* LOGOS dans le carousel */
-    .carousel-inner .carousel-item img {
-      max-height: 100px;
-      width: auto;
-      margin: auto;
-      object-fit: contain;
-    }
+/* --- Artifact Cards (AI Studio Style) --- */
+.artifact-card {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background: rgba(40, 40, 40, 0.4) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 20px !important;
+  position: relative;
+  overflow: hidden;
+}
 
-    /* Boutons de navigation du carousel */
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      background-image: none;
-      color: #000;
-      /* noir, tu peux changer */
-      font-size: 2rem;
-    }
+.artifact-card:hover {
+  background: rgba(60, 60, 60, 0.6) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 15px rgba(255, 255, 255, 0.1) !important;
+}
 
-    .carousel-control-prev,
-    .carousel-control-next {
-      width: auto;
-      padding: 0 15px;
-      background: none;
-      border: none;
-      opacity: 1;
-    }
+.artifact-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+  transition: 0.5s;
+}
 
-    /* Hauteur fixe pour éviter les sauts */
-    .carousel-item {
-      padding: 20px;
-      min-height: 280px;
-    }
+.artifact-card:hover::before {
+  left: 100%;
+}
 
-    /* Image des thèmes : homogène, avec border-radius */
-    .theme-image {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-      border-radius: 12px;
-      transition: transform 0.3s ease, opacity 0.3s ease;
-    }
+.artifact-card h5 {
+  margin-top: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
 
-    .theme-image:hover,
-    a img:hover {
-      opacity: 0.9;
-      transform: scale(1.02);
-    }
+/* --- Swiper Customization --- */
+.tools-swiper {
+  padding: 40px 20px 60px !important;
+}
 
-    #themes {
-      scroll-margin-top: 50px;
-    }
+.swiper-slide {
+  height: auto;
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
 
-    .card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-      cursor: pointer;
-    }
+.swiper-slide-active {
+  opacity: 1;
+}
 
-    .cv-pill {
-      display: inline-block;
-      padding: .25rem .6rem;
-      border: 1px solid #222;
-      border-radius: 999px;
-      font-weight: 600;
-    }
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.3) !important;
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #007bff !important;
+  width: 30px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff !important;
+  background: rgba(255, 255, 255, 0.1);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px !important;
+  font-weight: bold;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+/* Image des thèmes */
+.theme-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.theme-image:hover,
+a img:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+#themes {
+  scroll-margin-top: 50px;
+}
+
